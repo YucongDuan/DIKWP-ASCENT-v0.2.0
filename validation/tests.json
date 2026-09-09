@@ -1,0 +1,10 @@
+{
+  "python": "3.13.5",
+  "tests": 93,
+  "failures": 0,
+  "errors": 0,
+  "skipped": 0,
+  "seconds": 11.509,
+  "command": "PYTHONPATH=src python -m pytest -q --junitxml=validation/pytest.xml",
+  "suite": "Numerical, controller, integration, local HTTP and malformed-input tests"
+}

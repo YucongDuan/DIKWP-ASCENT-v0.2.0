@@ -1,0 +1,12 @@
+{
+  "negative_controls_rejected": {
+    "ignore_reference": true,
+    "ignore_revocation": true,
+    "ignore_stop": true,
+    "reuse_ticket": true
+  },
+  "scope": "Independent one-run/ticket finite abstraction, two epoch increments; not TLC, not a proof of code or universal AI safety",
+  "states": 47,
+  "transitions": 63,
+  "violations": []
+}

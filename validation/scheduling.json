@@ -1,0 +1,1025 @@
+{
+  "record": {
+    "actual_model_api_calls": 0,
+    "adoption": {
+      "absolute_tolerance": 1e-09,
+      "blocking_reasons": [
+        "STRONG_REFERENCE_NONREGRESSION_FAILED"
+      ],
+      "candidate_minus_reference_by_world": {
+        "in_distribution": 0.001381679069280764,
+        "proxy_failure": -0.004114593023191795,
+        "shifted_inputs": 0.004047740625934028
+      },
+      "eligible": false,
+      "scope": "Predeclared gate; not significance against reference and not state-of-the-art certification",
+      "strong_reference_nonregression": false
+    },
+    "asi_established": false,
+    "assurance_work_units": 2764800,
+    "audit": {
+      "audit_scope": "One frozen candidate; public synthetic generator or operator-provided data; not independent certification",
+      "eligible": true,
+      "improvement": true,
+      "nonregression": true,
+      "nonregression_tolerance": 0.01,
+      "paired": {
+        "high": 0.12746551382440716,
+        "low": 0.10497113309961899,
+        "mean_improvement": 0.11620706327453366,
+        "method": "paired_percentile_bootstrap_descriptive_95pct",
+        "resamples": 600
+      },
+      "worlds": {
+        "in_distribution": {
+          "baseline": 0.09860907659024647,
+          "candidate": 0.004727419289530655,
+          "interval": {
+            "high": 0.11354027374996262,
+            "low": 0.07578240946369931,
+            "mean_improvement": 0.09388165730071582,
+            "method": "paired_percentile_bootstrap_descriptive_95pct",
+            "resamples": 600
+          }
+        },
+        "proxy_failure": {
+          "baseline": 0.07183749057284346,
+          "candidate": 0.002838859874818341,
+          "interval": {
+            "high": 0.08890765894919088,
+            "low": 0.05034753708371055,
+            "mean_improvement": 0.06899863069802512,
+            "method": "paired_percentile_bootstrap_descriptive_95pct",
+            "resamples": 600
+          }
+        },
+        "shifted_inputs": {
+          "baseline": 0.19389898790034682,
+          "candidate": 0.008158086075486796,
+          "interval": {
+            "high": 0.2082737219556603,
+            "low": 0.1646570484084388,
+            "mean_improvement": 0.18574090182486003,
+            "method": "paired_percentile_bootstrap_descriptive_95pct",
+            "resamples": 600
+          }
+        }
+      },
+      "worst_baseline": 0.19389898790034682,
+      "worst_candidate": 0.008158086075486796
+    },
+    "audit_claim": "7ac51dde1f3b4734c545c234a52eb197",
+    "audit_key": "58347203288f9a0d67c13eb5be89fbd0b072bf01c043cc05597e82a561f5727d",
+    "authority": {
+      "arbitrary_code": false,
+      "candidate_can_change_verifier": false,
+      "candidate_format": "data-only-allowlisted-dsl",
+      "deployed_incumbent": "frozen-parameters-not-refitted",
+      "external_payment": false,
+      "holdout_feedback_during_search": false,
+      "human_claim_certification": false,
+      "network": false,
+      "promotion_scope": "local-policy-version-only",
+      "self_granted_permission": false,
+      "self_promotion": false,
+      "self_restart": false,
+      "shell": false,
+      "strong_reference_gate": "per-world-nonregression-absolute-1e-9",
+      "version": "ASCENT-CP-2"
+    },
+    "candidate_digest": "3d39486a0a41bd03245bb60400cf2ae3df31ddb111624494d13e5d6cb5ab7003",
+    "control_digest": "74b41b82eae591ee6c589163b2dcbdfbbe1ca84d087ff02b91c1ee94e714213a",
+    "dikwp": {
+      "D": {
+        "id": "dd61b29aaf798f5bea0dd69595aabbeca1e52c4f4bf9b93b98cc48f878e71694",
+        "scope": {
+          "audit_digest": "63c534e44c340573eb854acea1bf1049ccf1b6d7120b0c6bb7c94010e4630f8e",
+          "audit_rows": {
+            "in_distribution": 128,
+            "proxy_failure": 128,
+            "shifted_inputs": 128
+          },
+          "development_digest": "42047c104612db5a16236e4b3adf4a6a8b826d83287caa33d6c138e87ffbdf64",
+          "development_rows": {
+            "in_distribution": 48,
+            "proxy_failure": 48,
+            "shifted_inputs": 48
+          },
+          "seed": 17,
+          "synthetic": true,
+          "task": "scheduling",
+          "train_digest": "d8b2a2dbf1fe3a3f1f5b6893c05ad645e3b7263fb3f39123f9c8344b868092f7",
+          "train_rows": 72
+        },
+        "type": "DatasetScope"
+      },
+      "I": {
+        "development_trials": 27,
+        "source": "dd61b29aaf798f5bea0dd69595aabbeca1e52c4f4bf9b93b98cc48f878e71694",
+        "type": "ObservedResiduals"
+      },
+      "K": {
+        "program": {
+          "cost_power": 0.75,
+          "kind": "scheduler",
+          "swap_passes": 1
+        },
+        "scope": "Only the declared task distribution; no universal law claim",
+        "type": "EmpiricalCandidate"
+      },
+      "P": {
+        "outcome": "Find a lower-loss bounded policy without self-modifying the verifier",
+        "task": "scheduling",
+        "type": "ResearchPurpose"
+      },
+      "W": {
+        "policy_digest": "74b41b82eae591ee6c589163b2dcbdfbbe1ca84d087ff02b91c1ee94e714213a",
+        "principle": "Objective improvement cannot grant permission or overwrite failed evidence",
+        "type": "NonCompensableControls"
+      },
+      "routes": [
+        {
+          "from": "D",
+          "loss": "Finite noisy observations",
+          "to": "I"
+        },
+        {
+          "from": "I",
+          "loss": "Model-class and distribution limits",
+          "to": "K"
+        },
+        {
+          "from": "W",
+          "loss": "Normative rules are not physical laws",
+          "to": "P"
+        },
+        {
+          "from": "P",
+          "loss": "Next experiment requires fresh observations",
+          "to": "D"
+        }
+      ]
+    },
+    "fixed_generalist_audit": {
+      "complexity": 3,
+      "mean_loss": 0.004803179522604265,
+      "selection_score": 0.006983452898010136,
+      "world_losses": {
+        "in_distribution": 0.0033457402202498906,
+        "proxy_failure": 0.0069534528980101365,
+        "shifted_inputs": 0.004110345449552768
+      },
+      "worst_loss": 0.0069534528980101365
+    },
+    "foundation_weights_updated": false,
+    "interpretations": [
+      {
+        "falsifier": "Independent shifted data reverse the improvement or reveal a constraint failure",
+        "id": "transferable_improvement",
+        "prediction": "The frozen candidate lowers loss on each declared audit world",
+        "supported": true
+      },
+      {
+        "id": "selection_or_benchmark_artifact",
+        "next_test": "Independent data owner, new distributions, stronger baselines and equal-budget replication",
+        "prediction": "Gain disappears beyond the built-in model family or disclosed generator",
+        "status": "UNRESOLVED"
+      },
+      {
+        "id": "control_plane_failure",
+        "next_test": "Independent deployment and sandbox assessment before any native-code or network extension",
+        "prediction": "Apparent gain requires changing evaluator, authority, audit or limits",
+        "status": "CHECKED_ONLY_WITHIN_DATA_DSL_BOUNDARY"
+      }
+    ],
+    "limitations": [
+      "Finite synthetic or operator-provided domains, not ASI evidence",
+      "Search operators are algorithms, not independent conscious agents",
+      "No external model API was invoked",
+      "Audit withheld by interface, not protected against a hostile host",
+      "Paired bootstrap interval is descriptive; repeated holdout reuse causes contamination",
+      "No physical energy measurement",
+      "No autonomous production deployment"
+    ],
+    "limits": {
+      "audit_work_units": 8000000,
+      "generations": 6,
+      "proposals": 96,
+      "seconds": 30,
+      "work_units": 8000000
+    },
+    "parent_version": null,
+    "record_digest": "c54a001fc3de721d4590e90c24580365b7d23b0f8eab64ec9cd752b654fde882",
+    "run_id": "run-7dda90c07cc66adb7f750a7a",
+    "schema": "ascent.run/2",
+    "scope": {
+      "audit_digest": "63c534e44c340573eb854acea1bf1049ccf1b6d7120b0c6bb7c94010e4630f8e",
+      "audit_rows": {
+        "in_distribution": 128,
+        "proxy_failure": 128,
+        "shifted_inputs": 128
+      },
+      "development_digest": "42047c104612db5a16236e4b3adf4a6a8b826d83287caa33d6c138e87ffbdf64",
+      "development_rows": {
+        "in_distribution": 48,
+        "proxy_failure": 48,
+        "shifted_inputs": 48
+      },
+      "seed": 17,
+      "synthetic": true,
+      "task": "scheduling",
+      "train_digest": "d8b2a2dbf1fe3a3f1f5b6893c05ad645e3b7263fb3f39123f9c8344b868092f7",
+      "train_rows": 72
+    },
+    "search": {
+      "baseline": {
+        "program": {
+          "cost_power": 0.0,
+          "kind": "scheduler",
+          "swap_passes": 0
+        }
+      },
+      "champion": {
+        "complexity": 2,
+        "generation": 1,
+        "id": "77573bfa50c6eba66e7ec4e8f77da98311d689f608811f9b445e323ee52252a1",
+        "mean_loss": 0.00644056979436855,
+        "model": {
+          "program": {
+            "cost_power": 0.75,
+            "kind": "scheduler",
+            "swap_passes": 1
+          }
+        },
+        "operator": "one_edit_mutation",
+        "parent": "27b5a388416997bdb2f29d9bd80bd76a32737dc9fc88601217bed3e1ea3a31eb",
+        "program": {
+          "cost_power": 0.75,
+          "kind": "scheduler",
+          "swap_passes": 1
+        },
+        "selection_score": 0.01086734767816649,
+        "world_losses": {
+          "in_distribution": 0.0007550163800163801,
+          "proxy_failure": 0.007719345324922781,
+          "shifted_inputs": 0.01084734767816649
+        },
+        "worst_loss": 0.01084734767816649
+      },
+      "evaluated_count": 27,
+      "history": [
+        {
+          "complexity": 1,
+          "generation": 0,
+          "id": "27b5a388416997bdb2f29d9bd80bd76a32737dc9fc88601217bed3e1ea3a31eb",
+          "mean_loss": 0.10311159625568188,
+          "model": {
+            "program": {
+              "cost_power": 0.0,
+              "kind": "scheduler",
+              "swap_passes": 0
+            }
+          },
+          "operator": "incumbent",
+          "parent": null,
+          "program": {
+            "cost_power": 0.0,
+            "kind": "scheduler",
+            "swap_passes": 0
+          },
+          "selection_score": 0.17860931326974444,
+          "world_losses": {
+            "in_distribution": 0.0735291376063407,
+            "proxy_failure": 0.0572063378909605,
+            "shifted_inputs": 0.17859931326974443
+          },
+          "worst_loss": 0.17859931326974443
+        },
+        {
+          "complexity": 3,
+          "generation": 0,
+          "id": "4d64b64030899a8334c976f770b344857cf64cbd99388277e304536fa217c107",
+          "mean_loss": 0.008951432829112295,
+          "model": {
+            "program": {
+              "cost_power": 1.0,
+              "kind": "scheduler",
+              "swap_passes": 2
+            }
+          },
+          "operator": "fixed_generalist",
+          "parent": null,
+          "program": {
+            "cost_power": 1.0,
+            "kind": "scheduler",
+            "swap_passes": 2
+          },
+          "selection_score": 0.01747872022464069,
+          "world_losses": {
+            "in_distribution": 0.00028153153153153153,
+            "proxy_failure": 0.017448720224640692,
+            "shifted_inputs": 0.009124046731164662
+          },
+          "worst_loss": 0.017448720224640692
+        },
+        {
+          "complexity": 2,
+          "generation": 1,
+          "id": "fb2c253ac4a17356a5419a053180c63f7bcb1bf656ce80990440a07c4b33fc6b",
+          "mean_loss": 0.0137082553666376,
+          "model": {
+            "program": {
+              "cost_power": 1.5,
+              "kind": "scheduler",
+              "swap_passes": 1
+            }
+          },
+          "operator": "one_edit_mutation",
+          "parent": "27b5a388416997bdb2f29d9bd80bd76a32737dc9fc88601217bed3e1ea3a31eb",
+          "program": {
+            "cost_power": 1.5,
+            "kind": "scheduler",
+            "swap_passes": 1
+          },
+          "selection_score": 0.02418241553260834,
+          "world_losses": {
+            "in_distribution": 0.0072158908444124046,
+            "proxy_failure": 0.024162415532608342,
+            "shifted_inputs": 0.009746459722892052
+          },
+          "worst_loss": 0.024162415532608342
+        },
+        {
+          "complexity": 4,
+          "generation": 1,
+          "id": "b36e01f70d6c52ffb91c84e4909da8aab4bbfd62e9c93d648379ce6b2a201aed",
+          "mean_loss": 0.010603463899532683,
+          "model": {
+            "program": {
+              "cost_power": 1.25,
+              "kind": "scheduler",
+              "swap_passes": 3
+            }
+          },
+          "operator": "one_edit_mutation",
+          "parent": "27b5a388416997bdb2f29d9bd80bd76a32737dc9fc88601217bed3e1ea3a31eb",
+          "program": {
+            "cost_power": 1.25,
+            "kind": "scheduler",
+            "swap_passes": 3
+          },
+          "selection_score": 0.023545641423593666,
+          "world_losses": {
+            "in_distribution": 0.0009034220787952132,
+            "proxy_failure": 0.023505641423593668,
+            "shifted_inputs": 0.007401328196209168
+          },
+          "worst_loss": 0.023505641423593668
+        },
+        {
+          "complexity": 1,
+          "generation": 1,
+          "id": "83af1718de07f39eae2e96c8bc147df3d65c7529a9349126a864cf58168e524d",
+          "mean_loss": 0.023630231372771232,
+          "model": {
+            "program": {
+              "cost_power": 1,
+              "kind": "scheduler",
+              "swap_passes": 0
+            }
+          },
+          "operator": "one_edit_mutation",
+          "parent": "27b5a388416997bdb2f29d9bd80bd76a32737dc9fc88601217bed3e1ea3a31eb",
+          "program": {
+            "cost_power": 1,
+            "kind": "scheduler",
+            "swap_passes": 0
+          },
+          "selection_score": 0.032746752044441406,
+          "world_losses": {
+            "in_distribution": 0.015075219360106121,
+            "proxy_failure": 0.023078722713766167,
+            "shifted_inputs": 0.0327367520444414
+          },
+          "worst_loss": 0.0327367520444414
+        },
+        {
+          "complexity": 4,
+          "generation": 1,
+          "id": "f53d67ec7709c6abd46550a65d0f13c96b0f71fc08d16da7527e7f4d1c48a6fe",
+          "mean_loss": 0.008951432829112295,
+          "model": {
+            "program": {
+              "cost_power": 1,
+              "kind": "scheduler",
+              "swap_passes": 3
+            }
+          },
+          "operator": "one_edit_mutation",
+          "parent": "27b5a388416997bdb2f29d9bd80bd76a32737dc9fc88601217bed3e1ea3a31eb",
+          "program": {
+            "cost_power": 1,
+            "kind": "scheduler",
+            "swap_passes": 3
+          },
+          "selection_score": 0.01748872022464069,
+          "world_losses": {
+            "in_distribution": 0.00028153153153153153,
+            "proxy_failure": 0.017448720224640692,
+            "shifted_inputs": 0.009124046731164662
+          },
+          "worst_loss": 0.017448720224640692
+        },
+        {
+          "complexity": 3,
+          "generation": 1,
+          "id": "4934d37a19eb561d2046951060cf2201e77b3112f29c3ba289e01fa0027bf6d2",
+          "mean_loss": 0.10311159625568188,
+          "model": {
+            "program": {
+              "cost_power": 0,
+              "kind": "scheduler",
+              "swap_passes": 2
+            }
+          },
+          "operator": "one_edit_mutation",
+          "parent": "27b5a388416997bdb2f29d9bd80bd76a32737dc9fc88601217bed3e1ea3a31eb",
+          "program": {
+            "cost_power": 0,
+            "kind": "scheduler",
+            "swap_passes": 2
+          },
+          "selection_score": 0.17862931326974443,
+          "world_losses": {
+            "in_distribution": 0.0735291376063407,
+            "proxy_failure": 0.0572063378909605,
+            "shifted_inputs": 0.17859931326974443
+          },
+          "worst_loss": 0.17859931326974443
+        },
+        {
+          "complexity": 4,
+          "generation": 1,
+          "id": "b67b5cb86701036720d54ef7ed43849e2646f11f60ef7e2abff8df18099f519c",
+          "mean_loss": 0.10311159625568188,
+          "model": {
+            "program": {
+              "cost_power": 0,
+              "kind": "scheduler",
+              "swap_passes": 3
+            }
+          },
+          "operator": "one_edit_mutation",
+          "parent": "27b5a388416997bdb2f29d9bd80bd76a32737dc9fc88601217bed3e1ea3a31eb",
+          "program": {
+            "cost_power": 0,
+            "kind": "scheduler",
+            "swap_passes": 3
+          },
+          "selection_score": 0.17863931326974444,
+          "world_losses": {
+            "in_distribution": 0.0735291376063407,
+            "proxy_failure": 0.0572063378909605,
+            "shifted_inputs": 0.17859931326974443
+          },
+          "worst_loss": 0.17859931326974443
+        },
+        {
+          "complexity": 1,
+          "generation": 1,
+          "id": "db6a4c78a20cf9a8d5faaa899f309a12050b81b1d0638c343f23b721a8f9d571",
+          "mean_loss": 0.013523485830301156,
+          "model": {
+            "program": {
+              "cost_power": 0.75,
+              "kind": "scheduler",
+              "swap_passes": 0
+            }
+          },
+          "operator": "one_edit_mutation",
+          "parent": "27b5a388416997bdb2f29d9bd80bd76a32737dc9fc88601217bed3e1ea3a31eb",
+          "program": {
+            "cost_power": 0.75,
+            "kind": "scheduler",
+            "swap_passes": 0
+          },
+          "selection_score": 0.024245684663672343,
+          "world_losses": {
+            "in_distribution": 0.005756468388667031,
+            "proxy_failure": 0.010578304438564093,
+            "shifted_inputs": 0.024235684663672343
+          },
+          "worst_loss": 0.024235684663672343
+        },
+        {
+          "complexity": 1,
+          "generation": 1,
+          "id": "cee8899d77fbd465ffc420a09b5479994b13426162c965b404a1e1f8b7beac30",
+          "mean_loss": 0.10311159625568188,
+          "model": {
+            "program": {
+              "cost_power": 0,
+              "kind": "scheduler",
+              "swap_passes": 0
+            }
+          },
+          "operator": "one_edit_mutation",
+          "parent": "4d64b64030899a8334c976f770b344857cf64cbd99388277e304536fa217c107",
+          "program": {
+            "cost_power": 0,
+            "kind": "scheduler",
+            "swap_passes": 0
+          },
+          "selection_score": 0.17860931326974444,
+          "world_losses": {
+            "in_distribution": 0.0735291376063407,
+            "proxy_failure": 0.0572063378909605,
+            "shifted_inputs": 0.17859931326974443
+          },
+          "worst_loss": 0.17859931326974443
+        },
+        {
+          "complexity": 2,
+          "generation": 1,
+          "id": "0e667ec1ea1c6c0116356968934133f0544ac3dc7180abe6dffe8b10674c4ead",
+          "mean_loss": 0.023682107358538294,
+          "model": {
+            "program": {
+              "cost_power": 0.5,
+              "kind": "scheduler",
+              "swap_passes": 1
+            }
+          },
+          "operator": "one_edit_mutation",
+          "parent": "4d64b64030899a8334c976f770b344857cf64cbd99388277e304536fa217c107",
+          "program": {
+            "cost_power": 0.5,
+            "kind": "scheduler",
+            "swap_passes": 1
+          },
+          "selection_score": 0.05162051499011713,
+          "world_losses": {
+            "in_distribution": 0.010114162457912457,
+            "proxy_failure": 0.009331644627585296,
+            "shifted_inputs": 0.051600514990117134
+          },
+          "worst_loss": 0.051600514990117134
+        },
+        {
+          "complexity": 2,
+          "generation": 1,
+          "id": "77573bfa50c6eba66e7ec4e8f77da98311d689f608811f9b445e323ee52252a1",
+          "mean_loss": 0.00644056979436855,
+          "model": {
+            "program": {
+              "cost_power": 0.75,
+              "kind": "scheduler",
+              "swap_passes": 1
+            }
+          },
+          "operator": "one_edit_mutation",
+          "parent": "27b5a388416997bdb2f29d9bd80bd76a32737dc9fc88601217bed3e1ea3a31eb",
+          "program": {
+            "cost_power": 0.75,
+            "kind": "scheduler",
+            "swap_passes": 1
+          },
+          "selection_score": 0.01086734767816649,
+          "world_losses": {
+            "in_distribution": 0.0007550163800163801,
+            "proxy_failure": 0.007719345324922781,
+            "shifted_inputs": 0.01084734767816649
+          },
+          "worst_loss": 0.01084734767816649
+        },
+        {
+          "complexity": 2,
+          "generation": 1,
+          "id": "58f00e2d52a3ab8f1ad5958dfb73f85f3da90d0d47c43167a2523f0c1fa48088",
+          "mean_loss": 0.018729282927045312,
+          "model": {
+            "program": {
+              "cost_power": 2,
+              "kind": "scheduler",
+              "swap_passes": 1
+            }
+          },
+          "operator": "one_edit_mutation",
+          "parent": "27b5a388416997bdb2f29d9bd80bd76a32737dc9fc88601217bed3e1ea3a31eb",
+          "program": {
+            "cost_power": 2,
+            "kind": "scheduler",
+            "swap_passes": 1
+          },
+          "selection_score": 0.029545451836238707,
+          "world_losses": {
+            "in_distribution": 0.01188584134888604,
+            "proxy_failure": 0.029525451836238708,
+            "shifted_inputs": 0.014776555596011182
+          },
+          "worst_loss": 0.029525451836238708
+        },
+        {
+          "complexity": 3,
+          "generation": 1,
+          "id": "a0f5c2bad9275d0422cf9a57fae013059e528c4eab141001e029ce6ed9a7277a",
+          "mean_loss": 0.008951432829112295,
+          "model": {
+            "program": {
+              "cost_power": 1,
+              "kind": "scheduler",
+              "swap_passes": 2
+            }
+          },
+          "operator": "one_edit_mutation",
+          "parent": "4d64b64030899a8334c976f770b344857cf64cbd99388277e304536fa217c107",
+          "program": {
+            "cost_power": 1,
+            "kind": "scheduler",
+            "swap_passes": 2
+          },
+          "selection_score": 0.01747872022464069,
+          "world_losses": {
+            "in_distribution": 0.00028153153153153153,
+            "proxy_failure": 0.017448720224640692,
+            "shifted_inputs": 0.009124046731164662
+          },
+          "worst_loss": 0.017448720224640692
+        },
+        {
+          "complexity": 3,
+          "generation": 1,
+          "id": "fccaa764018afaa63ddd1f6955064ff38186aafb006c0f1e8af94eb928c39cc3",
+          "mean_loss": 0.00644056979436855,
+          "model": {
+            "program": {
+              "cost_power": 0.75,
+              "kind": "scheduler",
+              "swap_passes": 2
+            }
+          },
+          "operator": "one_edit_mutation",
+          "parent": "27b5a388416997bdb2f29d9bd80bd76a32737dc9fc88601217bed3e1ea3a31eb",
+          "program": {
+            "cost_power": 0.75,
+            "kind": "scheduler",
+            "swap_passes": 2
+          },
+          "selection_score": 0.01087734767816649,
+          "world_losses": {
+            "in_distribution": 0.0007550163800163801,
+            "proxy_failure": 0.007719345324922781,
+            "shifted_inputs": 0.01084734767816649
+          },
+          "worst_loss": 0.01084734767816649
+        },
+        {
+          "complexity": 3,
+          "generation": 1,
+          "id": "beff2d5b568225dd81387890a0e47e7b0f1e62a4278e0383df8281f9777cca87",
+          "mean_loss": 0.01358073165323445,
+          "model": {
+            "program": {
+              "cost_power": 1.5,
+              "kind": "scheduler",
+              "swap_passes": 2
+            }
+          },
+          "operator": "one_edit_mutation",
+          "parent": "27b5a388416997bdb2f29d9bd80bd76a32737dc9fc88601217bed3e1ea3a31eb",
+          "program": {
+            "cost_power": 1.5,
+            "kind": "scheduler",
+            "swap_passes": 2
+          },
+          "selection_score": 0.02419241553260834,
+          "world_losses": {
+            "in_distribution": 0.0072158908444124046,
+            "proxy_failure": 0.024162415532608342,
+            "shifted_inputs": 0.009363888582682599
+          },
+          "worst_loss": 0.024162415532608342
+        },
+        {
+          "complexity": 2,
+          "generation": 1,
+          "id": "4875e292378ac42fe2303eb4af0f32018b2c6b73bc50141a21a7a3bec543c7d0",
+          "mean_loss": 0.10311159625568188,
+          "model": {
+            "program": {
+              "cost_power": 0,
+              "kind": "scheduler",
+              "swap_passes": 1
+            }
+          },
+          "operator": "one_edit_mutation",
+          "parent": "27b5a388416997bdb2f29d9bd80bd76a32737dc9fc88601217bed3e1ea3a31eb",
+          "program": {
+            "cost_power": 0,
+            "kind": "scheduler",
+            "swap_passes": 1
+          },
+          "selection_score": 0.17861931326974442,
+          "world_losses": {
+            "in_distribution": 0.0735291376063407,
+            "proxy_failure": 0.0572063378909605,
+            "shifted_inputs": 0.17859931326974443
+          },
+          "worst_loss": 0.17859931326974443
+        },
+        {
+          "complexity": 2,
+          "generation": 1,
+          "id": "4d3dd6d53cee2ed164a09d2808182500aa920a53cf092ed11f48249694d0c726",
+          "mean_loss": 0.008951432829112295,
+          "model": {
+            "program": {
+              "cost_power": 1,
+              "kind": "scheduler",
+              "swap_passes": 1
+            }
+          },
+          "operator": "one_edit_mutation",
+          "parent": "27b5a388416997bdb2f29d9bd80bd76a32737dc9fc88601217bed3e1ea3a31eb",
+          "program": {
+            "cost_power": 1,
+            "kind": "scheduler",
+            "swap_passes": 1
+          },
+          "selection_score": 0.01746872022464069,
+          "world_losses": {
+            "in_distribution": 0.00028153153153153153,
+            "proxy_failure": 0.017448720224640692,
+            "shifted_inputs": 0.009124046731164662
+          },
+          "worst_loss": 0.017448720224640692
+        },
+        {
+          "complexity": 1,
+          "generation": 1,
+          "id": "b73255def82cad826ec6f1998d1d162cc8f7522b38ce91116622e06d07e34dd2",
+          "mean_loss": 0.061367888155592104,
+          "model": {
+            "program": {
+              "cost_power": 2,
+              "kind": "scheduler",
+              "swap_passes": 0
+            }
+          },
+          "operator": "one_edit_mutation",
+          "parent": "27b5a388416997bdb2f29d9bd80bd76a32737dc9fc88601217bed3e1ea3a31eb",
+          "program": {
+            "cost_power": 2,
+            "kind": "scheduler",
+            "swap_passes": 0
+          },
+          "selection_score": 0.07986048956459565,
+          "world_losses": {
+            "in_distribution": 0.056262214759711555,
+            "proxy_failure": 0.0479909601424691,
+            "shifted_inputs": 0.07985048956459566
+          },
+          "worst_loss": 0.07985048956459566
+        },
+        {
+          "complexity": 4,
+          "generation": 1,
+          "id": "228c89c51b64277c9451a619e3b2117c100041b6a1f2fecda23a87339ec01877",
+          "mean_loss": 0.01860175921364216,
+          "model": {
+            "program": {
+              "cost_power": 2,
+              "kind": "scheduler",
+              "swap_passes": 3
+            }
+          },
+          "operator": "one_edit_mutation",
+          "parent": "27b5a388416997bdb2f29d9bd80bd76a32737dc9fc88601217bed3e1ea3a31eb",
+          "program": {
+            "cost_power": 2,
+            "kind": "scheduler",
+            "swap_passes": 3
+          },
+          "selection_score": 0.029565451836238706,
+          "world_losses": {
+            "in_distribution": 0.01188584134888604,
+            "proxy_failure": 0.029525451836238708,
+            "shifted_inputs": 0.014393984455801727
+          },
+          "worst_loss": 0.029525451836238708
+        },
+        {
+          "complexity": 4,
+          "generation": 1,
+          "id": "e76a3614626affdc8a3c5db00ccfc87aa13ad539f99f96d576a97f611396aa2e",
+          "mean_loss": 0.00644056979436855,
+          "model": {
+            "program": {
+              "cost_power": 0.75,
+              "kind": "scheduler",
+              "swap_passes": 3
+            }
+          },
+          "operator": "one_edit_mutation",
+          "parent": "27b5a388416997bdb2f29d9bd80bd76a32737dc9fc88601217bed3e1ea3a31eb",
+          "program": {
+            "cost_power": 0.75,
+            "kind": "scheduler",
+            "swap_passes": 3
+          },
+          "selection_score": 0.01088734767816649,
+          "world_losses": {
+            "in_distribution": 0.0007550163800163801,
+            "proxy_failure": 0.007719345324922781,
+            "shifted_inputs": 0.01084734767816649
+          },
+          "worst_loss": 0.01084734767816649
+        },
+        {
+          "complexity": 3,
+          "generation": 1,
+          "id": "f103d97ccefbc5c819224c400178831743198f475de6cb07c3ab84bffbaf28e1",
+          "mean_loss": 0.023682107358538294,
+          "model": {
+            "program": {
+              "cost_power": 0.5,
+              "kind": "scheduler",
+              "swap_passes": 2
+            }
+          },
+          "operator": "one_edit_mutation",
+          "parent": "4d64b64030899a8334c976f770b344857cf64cbd99388277e304536fa217c107",
+          "program": {
+            "cost_power": 0.5,
+            "kind": "scheduler",
+            "swap_passes": 2
+          },
+          "selection_score": 0.051630514990117136,
+          "world_losses": {
+            "in_distribution": 0.010114162457912457,
+            "proxy_failure": 0.009331644627585296,
+            "shifted_inputs": 0.051600514990117134
+          },
+          "worst_loss": 0.051600514990117134
+        },
+        {
+          "complexity": 4,
+          "generation": 1,
+          "id": "43fd9d5443c84a74167faeb092cc5a3d3e6ce1d457f8a4aa3afab4ad3c43aeda",
+          "mean_loss": 0.023682107358538294,
+          "model": {
+            "program": {
+              "cost_power": 0.5,
+              "kind": "scheduler",
+              "swap_passes": 3
+            }
+          },
+          "operator": "one_edit_mutation",
+          "parent": "27b5a388416997bdb2f29d9bd80bd76a32737dc9fc88601217bed3e1ea3a31eb",
+          "program": {
+            "cost_power": 0.5,
+            "kind": "scheduler",
+            "swap_passes": 3
+          },
+          "selection_score": 0.05164051499011713,
+          "world_losses": {
+            "in_distribution": 0.010114162457912457,
+            "proxy_failure": 0.009331644627585296,
+            "shifted_inputs": 0.051600514990117134
+          },
+          "worst_loss": 0.051600514990117134
+        },
+        {
+          "complexity": 1,
+          "generation": 1,
+          "id": "2dc15faef1a7be8b6b3679925e16d9b70724274bf44604a5beddf15c428fe024",
+          "mean_loss": 0.03756924356144206,
+          "model": {
+            "program": {
+              "cost_power": 1.25,
+              "kind": "scheduler",
+              "swap_passes": 0
+            }
+          },
+          "operator": "one_edit_mutation",
+          "parent": "27b5a388416997bdb2f29d9bd80bd76a32737dc9fc88601217bed3e1ea3a31eb",
+          "program": {
+            "cost_power": 1.25,
+            "kind": "scheduler",
+            "swap_passes": 0
+          },
+          "selection_score": 0.05217232247879197,
+          "world_losses": {
+            "in_distribution": 0.02454771473203279,
+            "proxy_failure": 0.03599769347350142,
+            "shifted_inputs": 0.05216232247879197
+          },
+          "worst_loss": 0.05216232247879197
+        },
+        {
+          "complexity": 1,
+          "generation": 1,
+          "id": "9895fc6f565e6a8484eddb8a029238a18a6adf0c60da8fd933b8675cc90a986b",
+          "mean_loss": 0.02713853614220064,
+          "model": {
+            "program": {
+              "cost_power": 0.5,
+              "kind": "scheduler",
+              "swap_passes": 0
+            }
+          },
+          "operator": "one_edit_mutation",
+          "parent": "4d64b64030899a8334c976f770b344857cf64cbd99388277e304536fa217c107",
+          "program": {
+            "cost_power": 0.5,
+            "kind": "scheduler",
+            "swap_passes": 0
+          },
+          "selection_score": 0.057831852405311676,
+          "world_losses": {
+            "in_distribution": 0.012027483662992056,
+            "proxy_failure": 0.011566272358298197,
+            "shifted_inputs": 0.05782185240531167
+          },
+          "worst_loss": 0.05782185240531167
+        },
+        {
+          "complexity": 3,
+          "generation": 1,
+          "id": "b8cc3f82db6026132ab8ebdd8fb9d7abb1379ba83604a765bd763d93abf0effd",
+          "mean_loss": 0.010603463899532683,
+          "model": {
+            "program": {
+              "cost_power": 1.25,
+              "kind": "scheduler",
+              "swap_passes": 2
+            }
+          },
+          "operator": "one_edit_mutation",
+          "parent": "27b5a388416997bdb2f29d9bd80bd76a32737dc9fc88601217bed3e1ea3a31eb",
+          "program": {
+            "cost_power": 1.25,
+            "kind": "scheduler",
+            "swap_passes": 2
+          },
+          "selection_score": 0.023535641423593667,
+          "world_losses": {
+            "in_distribution": 0.0009034220787952132,
+            "proxy_failure": 0.023505641423593668,
+            "shifted_inputs": 0.007401328196209168
+          },
+          "worst_loss": 0.023505641423593668
+        },
+        {
+          "complexity": 1,
+          "generation": 1,
+          "id": "7bfe674edbd1763e42e39d59ac77b633be53c142d8cba43976a77729ade915bc",
+          "mean_loss": 0.048611468313656564,
+          "model": {
+            "program": {
+              "cost_power": 1.5,
+              "kind": "scheduler",
+              "swap_passes": 0
+            }
+          },
+          "operator": "one_edit_mutation",
+          "parent": "4d64b64030899a8334c976f770b344857cf64cbd99388277e304536fa217c107",
+          "program": {
+            "cost_power": 1.5,
+            "kind": "scheduler",
+            "swap_passes": 0
+          },
+          "selection_score": 0.06766062972647327,
+          "world_losses": {
+            "in_distribution": 0.0345615211734067,
+            "proxy_failure": 0.04362225404108972,
+            "shifted_inputs": 0.06765062972647327
+          },
+          "worst_loss": 0.06765062972647327
+        }
+      ],
+      "holdout_seen_by_search": false,
+      "incumbent_evaluation_mode": "FITTED_REFERENCE_PROGRAM",
+      "proposal_count": 28,
+      "search_status": "SEARCH_BUDGET_STOP",
+      "strong_comparator": {
+        "program": {
+          "cost_power": 1.0,
+          "kind": "scheduler",
+          "swap_passes": 2
+        }
+      },
+      "work_units": 7970016
+    },
+    "seed": 17,
+    "source_fingerprint": "fdc11910ac039aacb3b3284bc075053e72be9bcce0487fa20474452eb5d8a8d0",
+    "status": "NOT_PROMOTABLE",
+    "task": "scheduling"
+  },
+  "telemetry": {
+    "python": "3.13.5",
+    "wall_seconds": 0.35392866400002276,
+    "work_unit_kind": "deterministic_accounting_units_not_joules",
+    "work_units": 7970016
+  }
+}

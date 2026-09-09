@@ -1,0 +1,9 @@
+{
+  "$schema":"https://json-schema.org/draft/2020-12/schema",
+  "title":"ASCENT data-only candidate list",
+  "type":"array","maxItems":32,
+  "items":{"oneOf":[
+    {"type":"object","additionalProperties":false,"required":["kind","features","ridge"],"properties":{"kind":{"const":"basis"},"features":{"type":"array","maxItems":6,"uniqueItems":true,"items":{"enum":["x","x2","x3","sin","cos","proxy"]}},"ridge":{"type":"number","minimum":0.000001,"maximum":1}}},
+    {"type":"object","additionalProperties":false,"required":["kind","cost_power","swap_passes"],"properties":{"kind":{"const":"scheduler"},"cost_power":{"type":"number","minimum":0,"maximum":2},"swap_passes":{"type":"integer","minimum":0,"maximum":3}}}
+  ]}
+}

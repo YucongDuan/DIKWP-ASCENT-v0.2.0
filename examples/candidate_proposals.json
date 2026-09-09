@@ -1,0 +1,18 @@
+[
+  {
+    "kind": "basis",
+    "features": [
+      "x",
+      "x2"
+    ],
+    "ridge": 0.001
+  },
+  {
+    "kind": "basis",
+    "features": [
+      "x",
+      "sin"
+    ],
+    "ridge": 0.001
+  }
+]

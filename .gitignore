@@ -1,0 +1,11 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+build/
+dist/
+*.egg-info/
+workspace/
+*-workspace/
+*.sqlite*
+controller.key
+approval.json

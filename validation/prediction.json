@@ -1,0 +1,16 @@
+{
+  "digest": "681411143c546516013ff59da08183c85d331934678648b1e009b19fa732aba9",
+  "external_actions": 0,
+  "input_digest": "a86d5e6d69640c3c538a2d22e59b27f347c49cd2a35bf31aab5e2bc0faa9fadd",
+  "model_digest": "e56ea1a499c274e43e9acba05a87889d29c388ef39967037431fa08e8cd522e8",
+  "note": "Frozen bounded policy; inference is not proof of correctness on new data",
+  "outputs": [
+    -1.9855418707746315,
+    0.3973020311961158,
+    2.7893305164978877,
+    3.625530729327745
+  ],
+  "schema": "ascent.inference/1",
+  "task": "periodic",
+  "version": "v-e56ea1a499c274e4-d0642e34"
+}

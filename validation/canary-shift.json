@@ -1,0 +1,23 @@
+{
+  "automatic_rollback": false,
+  "data_digest": "fe47118b541f0f3707cfb7559355baf177909629b1cefca09e038b40474d5afd",
+  "data_status": "USER_SUPPLIED_MONITORING_NOT_INDEPENDENT_HOLDOUT",
+  "digest": "570aa68556c393c71672335e34112286a5b5fd71db993fcc0d0b24c8bd804818",
+  "evaluation": {
+    "complexity": 3,
+    "mean_loss": 24.930001485675945,
+    "selection_score": 25.012747185871724,
+    "world_losses": {
+      "in_distribution": 24.94521316000974,
+      "proxy_failure": 25.012717185871725,
+      "shifted_inputs": 24.832074111146365
+    },
+    "worst_loss": 25.012717185871725
+  },
+  "model_digest": "e56ea1a499c274e43e9acba05a87889d29c388ef39967037431fa08e8cd522e8",
+  "review_recommended": true,
+  "schema": "ascent.monitor/1",
+  "task": "periodic",
+  "threshold": 0.1,
+  "version": "v-e56ea1a499c274e4-d0642e34"
+}

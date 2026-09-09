@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "dikwp-ascent"
+version = "0.2.0"
+description = "Evidence-gated, bounded autonomous research and policy evolution. Not a demonstrated ASI."
+requires-python = ">=3.10"
+license = {text = "Apache-2.0"}
+authors = [{name = "DIKWP ASCENT contributors"}]
+readme = "README.md"
+dependencies = []
+
+[project.scripts]
+ascent = "dikwp_ascent.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+dikwp_ascent = ["resources/*.html"]

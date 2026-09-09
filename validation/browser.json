@@ -1,0 +1,15 @@
+{
+  "actual_loopback_navigation": false,
+  "browser_navigation_limit": "ERR_BLOCKED_BY_ADMINISTRATOR",
+  "ui_test_transport": "Identical served HTML except fetch wrapper replaced by Playwright binding to real HTTP backend; API and headers tested separately",
+  "page_errors": [],
+  "external_requests": [],
+  "mobile_horizontal_overflow": false,
+  "run": true,
+  "inspect": true,
+  "approval_then_activation": true,
+  "actual_inference": true,
+  "strong_reference_rejection": true,
+  "stop_blocks_inference": true,
+  "scope": "Chromium DOM rendering and UI state transitions via real local backend bridge; not direct-navigation or CSP enforcement proof"
+}

@@ -1,0 +1,9 @@
+cff-version: 1.2.0
+message: "Please cite the software version and its stated experimental scope."
+title: "DIKWP ASCENT Research Kernel"
+authors:
+  - family-names: Duan
+    given-names: Yucong
+version: "0.2.0"
+license: Apache-2.0
+repository-code: "https://github.com/YucongDuan/DIKWP-ASCENT-v0.2.0"

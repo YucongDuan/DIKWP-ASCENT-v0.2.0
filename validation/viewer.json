@@ -1,0 +1,10 @@
+{
+  "mode": "Static offline results viewer in Chromium DOM",
+  "page_errors": [],
+  "network_requests": [],
+  "fixed_model_prediction_assertions": 4,
+  "invalid_numeric_rejected": true,
+  "mobile_horizontal_overflow": false,
+  "task_rows": 4,
+  "scope": "Not controller authentication; full browser search parity is not claimed"
+}

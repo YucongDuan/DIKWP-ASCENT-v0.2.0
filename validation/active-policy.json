@@ -1,0 +1,25 @@
+{
+  "authority_transferred": false,
+  "digest": "6db23e1db615e52b3548b9d194a18616b8414dd1bada0f8f2e7086a97dc26c3d",
+  "model": {
+    "coefficients": [
+      0.3973020311961158,
+      2.0229094490330097,
+      0.6852165873812534,
+      0.004592291665512276
+    ],
+    "program": {
+      "features": [
+        "sin",
+        "x",
+        "x2"
+      ],
+      "kind": "basis",
+      "ridge": 0.001
+    }
+  },
+  "note": "Portable numerical parameters, not an approval ticket or external authority",
+  "schema": "ascent.policy-export/1",
+  "task": "periodic",
+  "version": "v-e56ea1a499c274e4-d0642e34"
+}

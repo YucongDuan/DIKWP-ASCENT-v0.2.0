@@ -1,0 +1,9 @@
+{
+  "python": "3.12.14",
+  "environment": "Linux; fresh local verification before GitHub import",
+  "total_tests": 93,
+  "failures": 0,
+  "errors": 0,
+  "command": "PYTHONPATH=src python -m pytest -q",
+  "source_and_test_bytes_preserved": true
+}

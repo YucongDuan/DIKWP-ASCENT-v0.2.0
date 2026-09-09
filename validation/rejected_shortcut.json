@@ -1,0 +1,67 @@
+{
+  "audit": {
+    "audit_scope": "One frozen candidate; public synthetic generator or operator-provided data; not independent certification",
+    "eligible": false,
+    "improvement": false,
+    "nonregression": false,
+    "nonregression_tolerance": 0.002,
+    "paired": {
+      "high": -0.6463767884354754,
+      "low": -6.0413757114376985,
+      "mean_improvement": -3.3967122170376522,
+      "method": "paired_percentile_bootstrap_descriptive_95pct",
+      "resamples": 600
+    },
+    "worlds": {
+      "in_distribution": {
+        "baseline": 0.5351492025496255,
+        "candidate": 3.2834190701701905e-05,
+        "interval": {
+          "high": 0.6289199748462632,
+          "low": 0.44931640738766926,
+          "mean_improvement": 0.5351163683589238,
+          "method": "paired_percentile_bootstrap_descriptive_95pct",
+          "resamples": 600
+        }
+      },
+      "proxy_failure": {
+        "baseline": 0.5823576774386574,
+        "candidate": 27.003154407882736,
+        "interval": {
+          "high": -21.682992185085006,
+          "low": -31.347661375864217,
+          "mean_improvement": -26.420796730444078,
+          "method": "paired_percentile_bootstrap_descriptive_95pct",
+          "resamples": 600
+        }
+      },
+      "shifted_inputs": {
+        "baseline": 15.695587780164098,
+        "candidate": 4.406919189985498e-05,
+        "interval": {
+          "high": 19.516286202242508,
+          "low": 12.54610779833275,
+          "mean_improvement": 15.6955437109722,
+          "method": "paired_percentile_bootstrap_descriptive_95pct",
+          "resamples": 600
+        }
+      }
+    },
+    "worst_baseline": 15.695587780164098,
+    "worst_candidate": 27.003154407882736
+  },
+  "candidate": {
+    "coefficients": [
+      -0.0007054604205296577,
+      1.0007654382831888
+    ],
+    "program": {
+      "features": [
+        "proxy"
+      ],
+      "kind": "basis",
+      "ridge": 0.001
+    }
+  },
+  "synthetic": true
+}

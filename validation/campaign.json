@@ -1,0 +1,193 @@
+{
+  "asi_established": false,
+  "automatic_adoptions": 0,
+  "digest": "79c603774e0c7ac6dd8ed8303cb2cac1321246d51d08334efaf359b8f02bc2a7",
+  "interpretation": "Public synthetic repeated trials, not independent real-world validation; all declared trials retained",
+  "schema": "ascent.campaign/1",
+  "spec": {
+    "automatic_adoption": false,
+    "limits": {
+      "audit_work_units": 8000000,
+      "generations": 6,
+      "proposals": 96,
+      "seconds": 30,
+      "work_units": 8000000
+    },
+    "max_seconds": 300,
+    "seeds": [
+      17,
+      23,
+      31
+    ],
+    "source_fingerprint": "fdc11910ac039aacb3b3284bc075053e72be9bcce0487fa20474452eb5d8a8d0",
+    "synthetic": true,
+    "tasks": [
+      "quadratic",
+      "periodic",
+      "sensor_shift",
+      "scheduling"
+    ]
+  },
+  "summary": {
+    "completed": 12,
+    "declared": 12,
+    "failed": 0,
+    "not_promotable": 4,
+    "not_run": 0,
+    "reviewable": 8
+  },
+  "trials": [
+    {
+      "blocking_reasons": [
+        "STRONG_REFERENCE_NONREGRESSION_FAILED"
+      ],
+      "candidate_worst": 0.0034194025494016524,
+      "incumbent_pass": true,
+      "incumbent_worst": 27.611113376085928,
+      "run_id": "run-6d2d7db6e11e1c9001e65eae",
+      "seed": 17,
+      "status": "NOT_PROMOTABLE",
+      "strong_reference_pass": false,
+      "strong_reference_worst": 0.0028344414241828608,
+      "task": "quadratic"
+    },
+    {
+      "blocking_reasons": [],
+      "candidate_worst": 0.0023164175516739763,
+      "incumbent_pass": true,
+      "incumbent_worst": 24.835240605218786,
+      "run_id": "run-03a4c9c3a2461abf482c7108",
+      "seed": 23,
+      "status": "REVIEWABLE",
+      "strong_reference_pass": true,
+      "strong_reference_worst": 0.47490353618584613,
+      "task": "quadratic"
+    },
+    {
+      "blocking_reasons": [],
+      "candidate_worst": 0.003850537604403271,
+      "incumbent_pass": true,
+      "incumbent_worst": 24.511565845648587,
+      "run_id": "run-99d7eb5ef6ff4d37e73d6efe",
+      "seed": 31,
+      "status": "REVIEWABLE",
+      "strong_reference_pass": true,
+      "strong_reference_worst": 0.280780793557148,
+      "task": "quadratic"
+    },
+    {
+      "blocking_reasons": [],
+      "candidate_worst": 0.00429399801512068,
+      "incumbent_pass": true,
+      "incumbent_worst": 9.172171504509501,
+      "run_id": "run-c56b623c85dfc03375891abc",
+      "seed": 17,
+      "status": "REVIEWABLE",
+      "strong_reference_pass": true,
+      "strong_reference_worst": 0.18874657600319006,
+      "task": "periodic"
+    },
+    {
+      "blocking_reasons": [],
+      "candidate_worst": 0.004765058840953033,
+      "incumbent_pass": true,
+      "incumbent_worst": 8.446424190810758,
+      "run_id": "run-9ae67da4f0c227a8972e7f3e",
+      "seed": 23,
+      "status": "REVIEWABLE",
+      "strong_reference_pass": true,
+      "strong_reference_worst": 0.04550234127021847,
+      "task": "periodic"
+    },
+    {
+      "blocking_reasons": [],
+      "candidate_worst": 0.003065623477904925,
+      "incumbent_pass": true,
+      "incumbent_worst": 8.048279689813292,
+      "run_id": "run-0a7ee425da89c744d18b19a2",
+      "seed": 31,
+      "status": "REVIEWABLE",
+      "strong_reference_pass": true,
+      "strong_reference_worst": 0.07215047746133567,
+      "task": "periodic"
+    },
+    {
+      "blocking_reasons": [
+        "STRONG_REFERENCE_NONREGRESSION_FAILED"
+      ],
+      "candidate_worst": 0.003923069171863878,
+      "incumbent_pass": true,
+      "incumbent_worst": 15.695587780164098,
+      "run_id": "run-9209a4023a80939b595d39aa",
+      "seed": 17,
+      "status": "NOT_PROMOTABLE",
+      "strong_reference_pass": false,
+      "strong_reference_worst": 0.0028834968244681775,
+      "task": "sensor_shift"
+    },
+    {
+      "blocking_reasons": [],
+      "candidate_worst": 0.002299659055443268,
+      "incumbent_pass": true,
+      "incumbent_worst": 14.077658838271173,
+      "run_id": "run-6e4c633b49efc55288035526",
+      "seed": 23,
+      "status": "REVIEWABLE",
+      "strong_reference_pass": true,
+      "strong_reference_worst": 0.3836865574011932,
+      "task": "sensor_shift"
+    },
+    {
+      "blocking_reasons": [],
+      "candidate_worst": 0.0030751292835784825,
+      "incumbent_pass": true,
+      "incumbent_worst": 13.940441615860943,
+      "run_id": "run-1c5ddfccd4f24bed247c9189",
+      "seed": 31,
+      "status": "REVIEWABLE",
+      "strong_reference_pass": true,
+      "strong_reference_worst": 0.23724027996028182,
+      "task": "sensor_shift"
+    },
+    {
+      "blocking_reasons": [
+        "STRONG_REFERENCE_NONREGRESSION_FAILED"
+      ],
+      "candidate_worst": 0.008158086075486796,
+      "incumbent_pass": true,
+      "incumbent_worst": 0.19389898790034682,
+      "run_id": "run-b88ecc94bc282829ed86a4fa",
+      "seed": 17,
+      "status": "NOT_PROMOTABLE",
+      "strong_reference_pass": false,
+      "strong_reference_worst": 0.0069534528980101365,
+      "task": "scheduling"
+    },
+    {
+      "blocking_reasons": [
+        "STRONG_REFERENCE_NONREGRESSION_FAILED"
+      ],
+      "candidate_worst": 0.006275543112977018,
+      "incumbent_pass": true,
+      "incumbent_worst": 0.19374682447098593,
+      "run_id": "run-a568899b480ec19b6cdbff4a",
+      "seed": 23,
+      "status": "NOT_PROMOTABLE",
+      "strong_reference_pass": false,
+      "strong_reference_worst": 0.004662128068773485,
+      "task": "scheduling"
+    },
+    {
+      "blocking_reasons": [],
+      "candidate_worst": 0.007927575841677158,
+      "incumbent_pass": true,
+      "incumbent_worst": 0.1713387348863446,
+      "run_id": "run-fa2bcce1cf543b0023f000f8",
+      "seed": 31,
+      "status": "REVIEWABLE",
+      "strong_reference_pass": true,
+      "strong_reference_worst": 0.007927575841677158,
+      "task": "scheduling"
+    }
+  ]
+}

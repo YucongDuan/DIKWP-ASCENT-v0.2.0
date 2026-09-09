@@ -1,0 +1,2644 @@
+{
+  "record": {
+    "actual_model_api_calls": 0,
+    "adoption": {
+      "absolute_tolerance": 1e-09,
+      "blocking_reasons": [],
+      "candidate_minus_reference_by_world": {
+        "in_distribution": -1.8291663164857804e-05,
+        "proxy_failure": -2.6285088134374605e-05,
+        "shifted_inputs": -0.18445257798806938
+      },
+      "eligible": true,
+      "scope": "Predeclared gate; not significance against reference and not state-of-the-art certification",
+      "strong_reference_nonregression": true
+    },
+    "asi_established": false,
+    "assurance_work_units": 513024,
+    "audit": {
+      "audit_scope": "One frozen candidate; public synthetic generator or operator-provided data; not independent certification",
+      "eligible": true,
+      "improvement": true,
+      "nonregression": true,
+      "nonregression_tolerance": 0.002,
+      "paired": {
+        "high": 4.06194088601081,
+        "low": 2.2600395183770563,
+        "mean_improvement": 3.1338024086398555,
+        "method": "paired_percentile_bootstrap_descriptive_95pct",
+        "resamples": 600
+      },
+      "worlds": {
+        "in_distribution": {
+          "baseline": 0.10819628332189507,
+          "candidate": 0.0019853160786493344,
+          "interval": {
+            "high": 0.12276513763336187,
+            "low": 0.08978311093450972,
+            "mean_improvement": 0.10621096724324573,
+            "method": "paired_percentile_bootstrap_descriptive_95pct",
+            "resamples": 600
+          }
+        },
+        "proxy_failure": {
+          "baseline": 0.12909931302926422,
+          "candidate": 0.0017805608473236867,
+          "interval": {
+            "high": 0.14673162524646813,
+            "low": 0.1083092809467769,
+            "mean_improvement": 0.12731875218194053,
+            "method": "paired_percentile_bootstrap_descriptive_95pct",
+            "resamples": 600
+          }
+        },
+        "shifted_inputs": {
+          "baseline": 9.172171504509501,
+          "candidate": 0.00429399801512068,
+          "interval": {
+            "high": 11.477083471855652,
+            "low": 7.021590904731343,
+            "mean_improvement": 9.167877506494381,
+            "method": "paired_percentile_bootstrap_descriptive_95pct",
+            "resamples": 600
+          }
+        }
+      },
+      "worst_baseline": 9.172171504509501,
+      "worst_candidate": 0.00429399801512068
+    },
+    "audit_claim": "f0fae7575f727807b738850606642728",
+    "audit_key": "d7e5175b3ac23f4e73fa21dc72345933bccdf726a4a6c5b32d6705c740b2856e",
+    "authority": {
+      "arbitrary_code": false,
+      "candidate_can_change_verifier": false,
+      "candidate_format": "data-only-allowlisted-dsl",
+      "deployed_incumbent": "frozen-parameters-not-refitted",
+      "external_payment": false,
+      "holdout_feedback_during_search": false,
+      "human_claim_certification": false,
+      "network": false,
+      "promotion_scope": "local-policy-version-only",
+      "self_granted_permission": false,
+      "self_promotion": false,
+      "self_restart": false,
+      "shell": false,
+      "strong_reference_gate": "per-world-nonregression-absolute-1e-9",
+      "version": "ASCENT-CP-2"
+    },
+    "candidate_digest": "e56ea1a499c274e43e9acba05a87889d29c388ef39967037431fa08e8cd522e8",
+    "control_digest": "74b41b82eae591ee6c589163b2dcbdfbbe1ca84d087ff02b91c1ee94e714213a",
+    "dikwp": {
+      "D": {
+        "id": "565c88d5cd458ee82dcb1fee2a5aa400b63d082e40d422c8e02c36f8e7477cce",
+        "scope": {
+          "audit_digest": "9fdb2ea51fa890440372d10903c24d5e1e089c09d7633f788a1359871bc29a70",
+          "audit_rows": {
+            "in_distribution": 128,
+            "proxy_failure": 128,
+            "shifted_inputs": 128
+          },
+          "development_digest": "4ff6105172ce636c683e3d9000792b697ac359f2427a2acc7999e118a1640185",
+          "development_rows": {
+            "in_distribution": 48,
+            "proxy_failure": 48,
+            "shifted_inputs": 48
+          },
+          "seed": 17,
+          "synthetic": true,
+          "task": "periodic",
+          "train_digest": "ea9e16b67020698b509adfb253f360dfc5277fc6c840320f913f7a245581d96e",
+          "train_rows": 72
+        },
+        "type": "DatasetScope"
+      },
+      "I": {
+        "development_trials": 56,
+        "source": "565c88d5cd458ee82dcb1fee2a5aa400b63d082e40d422c8e02c36f8e7477cce",
+        "type": "ObservedResiduals"
+      },
+      "K": {
+        "program": {
+          "features": [
+            "sin",
+            "x",
+            "x2"
+          ],
+          "kind": "basis",
+          "ridge": 0.001
+        },
+        "scope": "Only the declared task distribution; no universal law claim",
+        "type": "EmpiricalCandidate"
+      },
+      "P": {
+        "outcome": "Find a lower-loss bounded policy without self-modifying the verifier",
+        "task": "periodic",
+        "type": "ResearchPurpose"
+      },
+      "W": {
+        "policy_digest": "74b41b82eae591ee6c589163b2dcbdfbbe1ca84d087ff02b91c1ee94e714213a",
+        "principle": "Objective improvement cannot grant permission or overwrite failed evidence",
+        "type": "NonCompensableControls"
+      },
+      "routes": [
+        {
+          "from": "D",
+          "loss": "Finite noisy observations",
+          "to": "I"
+        },
+        {
+          "from": "I",
+          "loss": "Model-class and distribution limits",
+          "to": "K"
+        },
+        {
+          "from": "W",
+          "loss": "Normative rules are not physical laws",
+          "to": "P"
+        },
+        {
+          "from": "P",
+          "loss": "Next experiment requires fresh observations",
+          "to": "D"
+        }
+      ]
+    },
+    "fixed_generalist_audit": {
+      "complexity": 5,
+      "mean_loss": 0.0641856765601541,
+      "selection_score": 0.18879657600319005,
+      "world_losses": {
+        "in_distribution": 0.0020036077418141922,
+        "proxy_failure": 0.0018068459354580613,
+        "shifted_inputs": 0.18874657600319006
+      },
+      "worst_loss": 0.18874657600319006
+    },
+    "foundation_weights_updated": false,
+    "interpretations": [
+      {
+        "falsifier": "Independent shifted data reverse the improvement or reveal a constraint failure",
+        "id": "transferable_improvement",
+        "prediction": "The frozen candidate lowers loss on each declared audit world",
+        "supported": true
+      },
+      {
+        "id": "selection_or_benchmark_artifact",
+        "next_test": "Independent data owner, new distributions, stronger baselines and equal-budget replication",
+        "prediction": "Gain disappears beyond the built-in model family or disclosed generator",
+        "status": "UNRESOLVED"
+      },
+      {
+        "id": "control_plane_failure",
+        "next_test": "Independent deployment and sandbox assessment before any native-code or network extension",
+        "prediction": "Apparent gain requires changing evaluator, authority, audit or limits",
+        "status": "CHECKED_ONLY_WITHIN_DATA_DSL_BOUNDARY"
+      }
+    ],
+    "limitations": [
+      "Finite synthetic or operator-provided domains, not ASI evidence",
+      "Search operators are algorithms, not independent conscious agents",
+      "No external model API was invoked",
+      "Audit withheld by interface, not protected against a hostile host",
+      "Paired bootstrap interval is descriptive; repeated holdout reuse causes contamination",
+      "No physical energy measurement",
+      "No autonomous production deployment"
+    ],
+    "limits": {
+      "audit_work_units": 8000000,
+      "generations": 6,
+      "proposals": 96,
+      "seconds": 30,
+      "work_units": 8000000
+    },
+    "parent_version": null,
+    "record_digest": "d8b6af4bd299c924edce9bc834197f0e03a91f2fc4570ca0bf0209ce2cc6c56c",
+    "run_id": "run-8b9989e79c5fc2eb514aae98",
+    "schema": "ascent.run/2",
+    "scope": {
+      "audit_digest": "9fdb2ea51fa890440372d10903c24d5e1e089c09d7633f788a1359871bc29a70",
+      "audit_rows": {
+        "in_distribution": 128,
+        "proxy_failure": 128,
+        "shifted_inputs": 128
+      },
+      "development_digest": "4ff6105172ce636c683e3d9000792b697ac359f2427a2acc7999e118a1640185",
+      "development_rows": {
+        "in_distribution": 48,
+        "proxy_failure": 48,
+        "shifted_inputs": 48
+      },
+      "seed": 17,
+      "synthetic": true,
+      "task": "periodic",
+      "train_digest": "ea9e16b67020698b509adfb253f360dfc5277fc6c840320f913f7a245581d96e",
+      "train_rows": 72
+    },
+    "search": {
+      "baseline": {
+        "coefficients": [
+          0.3956542455357893,
+          1.9613358857478158
+        ],
+        "program": {
+          "features": [
+            "x"
+          ],
+          "kind": "basis",
+          "ridge": 0.001
+        }
+      },
+      "champion": {
+        "complexity": 3,
+        "generation": 2,
+        "id": "19d136311d2c81d2c4f6aad8fbb4be6046323a2c6d6c391d3ce2e7e87bf15b0a",
+        "mean_loss": 0.0023090546993219346,
+        "model": {
+          "coefficients": [
+            0.3973020311961158,
+            2.0229094490330097,
+            0.6852165873812534,
+            0.004592291665512276
+          ],
+          "program": {
+            "features": [
+              "sin",
+              "x",
+              "x2"
+            ],
+            "kind": "basis",
+            "ridge": 0.001
+          }
+        },
+        "operator": "one_edit_mutation",
+        "parent": "e09aac8586d6f957d8c3574049d5ba515b2d5d2fd2b6173868b89f0dbed33537",
+        "program": {
+          "features": [
+            "sin",
+            "x",
+            "x2"
+          ],
+          "kind": "basis",
+          "ridge": 0.001
+        },
+        "selection_score": 0.0028422467323845424,
+        "world_losses": {
+          "in_distribution": 0.0018158984055872936,
+          "proxy_failure": 0.0022990189599939683,
+          "shifted_inputs": 0.0028122467323845424
+        },
+        "worst_loss": 0.0028122467323845424
+      },
+      "evaluated_count": 56,
+      "history": [
+        {
+          "complexity": 1,
+          "generation": 0,
+          "id": "c3c09b950df149ce6da4f60b0d0e701740549647ab642570cb94b66722bfa3d3",
+          "mean_loss": 2.554403191182798,
+          "model": {
+            "coefficients": [
+              0.3956542455357893,
+              1.9613358857478158
+            ],
+            "program": {
+              "features": [
+                "x"
+              ],
+              "kind": "basis",
+              "ridge": 0.001
+            }
+          },
+          "operator": "incumbent",
+          "parent": null,
+          "program": {
+            "features": [
+              "x"
+            ],
+            "kind": "basis",
+            "ridge": 0.001
+          },
+          "selection_score": 7.463456125505665,
+          "world_losses": {
+            "in_distribution": 0.09687440548607457,
+            "proxy_failure": 0.10288904255665304,
+            "shifted_inputs": 7.463446125505666
+          },
+          "worst_loss": 7.463446125505666
+        },
+        {
+          "complexity": 5,
+          "generation": 0,
+          "id": "72f86c7e2682b65e24c7b76cb5301dfeee5a21c68671865e13892d8bb81ff560",
+          "mean_loss": 0.06881822919993143,
+          "model": {
+            "coefficients": [
+              0.4299529491562678,
+              -0.03467982045886335,
+              1.7064331360743723,
+              0.9921448059317213,
+              -0.008189597036531857,
+              -0.04167519510700874
+            ],
+            "program": {
+              "features": [
+                "cos",
+                "sin",
+                "x",
+                "x2",
+                "x3"
+              ],
+              "kind": "basis",
+              "ridge": 0.001
+            }
+          },
+          "operator": "fixed_generalist",
+          "parent": null,
+          "program": {
+            "features": [
+              "cos",
+              "sin",
+              "x",
+              "x2",
+              "x3"
+            ],
+            "kind": "basis",
+            "ridge": 0.001
+          },
+          "selection_score": 0.20230125640175542,
+          "world_losses": {
+            "in_distribution": 0.001836821814694034,
+            "proxy_failure": 0.002366609383344828,
+            "shifted_inputs": 0.20225125640175542
+          },
+          "worst_loss": 0.20225125640175542
+        },
+        {
+          "complexity": 5,
+          "generation": 1,
+          "id": "1d24744b0bbcafa492f115000eba09d14f9560dc617457078774f01d1f6b3a97",
+          "mean_loss": 0.028649523685776616,
+          "model": {
+            "coefficients": [
+              0.43087142943090656,
+              -0.03559232065738306,
+              1.8399282173561602,
+              0.8628780010748875,
+              -0.008478636559842385,
+              -0.02418426892857469
+            ],
+            "program": {
+              "features": [
+                "cos",
+                "sin",
+                "x",
+                "x2",
+                "x3"
+              ],
+              "kind": "basis",
+              "ridge": 1e-06
+            }
+          },
+          "operator": "one_edit_mutation",
+          "parent": "72f86c7e2682b65e24c7b76cb5301dfeee5a21c68671865e13892d8bb81ff560",
+          "program": {
+            "features": [
+              "cos",
+              "sin",
+              "x",
+              "x2",
+              "x3"
+            ],
+            "kind": "basis",
+            "ridge": 1e-06
+          },
+          "selection_score": 0.08181172859030449,
+          "world_losses": {
+            "in_distribution": 0.001828223316544869,
+            "proxy_failure": 0.002358619150480484,
+            "shifted_inputs": 0.08176172859030449
+          },
+          "worst_loss": 0.08176172859030449
+        },
+        {
+          "complexity": 2,
+          "generation": 1,
+          "id": "2c1d5fb15fbec08e4c2bbda17c3d13430594009be06671eb03c025d503dd2b99",
+          "mean_loss": 2.1958960605535713,
+          "model": {
+            "coefficients": [
+              0.40221899407637834,
+              2.645793644844756,
+              -0.2656035951047156
+            ],
+            "program": {
+              "features": [
+                "x",
+                "x3"
+              ],
+              "kind": "basis",
+              "ridge": 0.001
+            }
+          },
+          "operator": "one_edit_mutation",
+          "parent": "c3c09b950df149ce6da4f60b0d0e701740549647ab642570cb94b66722bfa3d3",
+          "program": {
+            "features": [
+              "x",
+              "x3"
+            ],
+            "kind": "basis",
+            "ridge": 0.001
+          },
+          "selection_score": 6.583071701653285,
+          "world_losses": {
+            "in_distribution": 0.0021148068941465657,
+            "proxy_failure": 0.002521673113282319,
+            "shifted_inputs": 6.583051701653285
+          },
+          "worst_loss": 6.583051701653285
+        },
+        {
+          "complexity": 1,
+          "generation": 1,
+          "id": "66e9d8074c713a7671ae9034b17cf82bbd570c680409c914896aa9089a90bdac",
+          "mean_loss": 2.5544640826525113,
+          "model": {
+            "coefficients": [
+              0.39565330296212453,
+              1.9613544004809276
+            ],
+            "program": {
+              "features": [
+                "x"
+              ],
+              "kind": "basis",
+              "ridge": 1e-06
+            }
+          },
+          "operator": "one_edit_mutation",
+          "parent": "c3c09b950df149ce6da4f60b0d0e701740549647ab642570cb94b66722bfa3d3",
+          "program": {
+            "features": [
+              "x"
+            ],
+            "kind": "basis",
+            "ridge": 1e-06
+          },
+          "selection_score": 7.463644264816247,
+          "world_losses": {
+            "in_distribution": 0.09687054496388088,
+            "proxy_failure": 0.10288743817740649,
+            "shifted_inputs": 7.463634264816247
+          },
+          "worst_loss": 7.463634264816247
+        },
+        {
+          "complexity": 2,
+          "generation": 1,
+          "id": "ab55089b77b65358cb68e36f7af2aa92228ca6351122238c79b0e281b22098cd",
+          "mean_loss": 2.6318513457280477,
+          "model": {
+            "coefficients": [
+              0.3769146068690133,
+              1.960633627211129,
+              0.01275135524874806
+            ],
+            "program": {
+              "features": [
+                "x",
+                "x2"
+              ],
+              "kind": "basis",
+              "ridge": 0.001
+            }
+          },
+          "operator": "one_edit_mutation",
+          "parent": "c3c09b950df149ce6da4f60b0d0e701740549647ab642570cb94b66722bfa3d3",
+          "program": {
+            "features": [
+              "x",
+              "x2"
+            ],
+            "kind": "basis",
+            "ridge": 0.001
+          },
+          "selection_score": 7.692529354388899,
+          "world_losses": {
+            "in_distribution": 0.0982630373381438,
+            "proxy_failure": 0.10478164545710107,
+            "shifted_inputs": 7.692509354388899
+          },
+          "worst_loss": 7.692509354388899
+        },
+        {
+          "complexity": 4,
+          "generation": 1,
+          "id": "64cfb56c0b201ae2d874d6955155e919f3f710b96e812d2eec4ed36970f4c85c",
+          "mean_loss": 2.2116041193399885,
+          "model": {
+            "coefficients": [
+              0.421180460772582,
+              -0.026134673150899554,
+              2.6452329185012435,
+              -0.005648269182568534,
+              -0.2654924015361428
+            ],
+            "program": {
+              "features": [
+                "cos",
+                "x",
+                "x2",
+                "x3"
+              ],
+              "kind": "basis",
+              "ridge": 0.001
+            }
+          },
+          "operator": "one_edit_mutation",
+          "parent": "72f86c7e2682b65e24c7b76cb5301dfeee5a21c68671865e13892d8bb81ff560",
+          "program": {
+            "features": [
+              "cos",
+              "x",
+              "x2",
+              "x3"
+            ],
+            "kind": "basis",
+            "ridge": 0.001
+          },
+          "selection_score": 6.6299506656728,
+          "world_losses": {
+            "in_distribution": 0.0022068637226102202,
+            "proxy_failure": 0.002694828624556502,
+            "shifted_inputs": 6.629910665672799
+          },
+          "worst_loss": 6.629910665672799
+        },
+        {
+          "complexity": 5,
+          "generation": 1,
+          "id": "e6864702e7218ac1c427b8d156a57550cd0037012e2fbb4e4777eae65d4d69fd",
+          "mean_loss": 0.23746162570229815,
+          "model": {
+            "coefficients": [
+              0.41583455519213847,
+              -0.02015409343285267,
+              1.3378781016724564,
+              1.3405716363474043,
+              -0.0028482425593092404,
+              -0.08715420716855539
+            ],
+            "program": {
+              "features": [
+                "cos",
+                "sin",
+                "x",
+                "x2",
+                "x3"
+              ],
+              "kind": "basis",
+              "ridge": 0.1
+            }
+          },
+          "operator": "one_edit_mutation",
+          "parent": "72f86c7e2682b65e24c7b76cb5301dfeee5a21c68671865e13892d8bb81ff560",
+          "program": {
+            "features": [
+              "cos",
+              "sin",
+              "x",
+              "x2",
+              "x3"
+            ],
+            "kind": "basis",
+            "ridge": 0.1
+          },
+          "selection_score": 0.7080574712106358,
+          "world_losses": {
+            "in_distribution": 0.0019364929245749686,
+            "proxy_failure": 0.002440912971683694,
+            "shifted_inputs": 0.7080074712106358
+          },
+          "worst_loss": 0.7080074712106358
+        },
+        {
+          "complexity": 4,
+          "generation": 1,
+          "id": "e2b1798ca4f893168d0db348c71ce849d6ca685e7cce01f933bc379244dfa465",
+          "mean_loss": 0.23408833434116036,
+          "model": {
+            "coefficients": [
+              0.435252657295346,
+              -0.03986005920112933,
+              2.730074746948333,
+              -0.009724616724522874,
+              0.09275256754340992
+            ],
+            "program": {
+              "features": [
+                "cos",
+                "sin",
+                "x2",
+                "x3"
+              ],
+              "kind": "basis",
+              "ridge": 0.001
+            }
+          },
+          "operator": "one_edit_mutation",
+          "parent": "72f86c7e2682b65e24c7b76cb5301dfeee5a21c68671865e13892d8bb81ff560",
+          "program": {
+            "features": [
+              "cos",
+              "sin",
+              "x2",
+              "x3"
+            ],
+            "kind": "basis",
+            "ridge": 0.001
+          },
+          "selection_score": 0.6980825928728557,
+          "world_losses": {
+            "in_distribution": 0.0018513441658214557,
+            "proxy_failure": 0.0023710659848039536,
+            "shifted_inputs": 0.6980425928728556
+          },
+          "worst_loss": 0.6980425928728556
+        },
+        {
+          "complexity": 4,
+          "generation": 1,
+          "id": "ce5225fadfa16d2b8cfa3c4abe8cb43d65de1862d4046414a888e951a5f0654b",
+          "mean_loss": 0.06314190505883763,
+          "model": {
+            "coefficients": [
+              0.4088577824999773,
+              -0.012480889338504497,
+              1.7045650935866834,
+              0.9939669725014999,
+              -0.0419072057956942
+            ],
+            "program": {
+              "features": [
+                "cos",
+                "sin",
+                "x",
+                "x3"
+              ],
+              "kind": "basis",
+              "ridge": 0.001
+            }
+          },
+          "operator": "one_edit_mutation",
+          "parent": "72f86c7e2682b65e24c7b76cb5301dfeee5a21c68671865e13892d8bb81ff560",
+          "program": {
+            "features": [
+              "cos",
+              "sin",
+              "x",
+              "x3"
+            ],
+            "kind": "basis",
+            "ridge": 0.001
+          },
+          "selection_score": 0.18529524483387125,
+          "world_losses": {
+            "in_distribution": 0.001833830370416458,
+            "proxy_failure": 0.002336639972225178,
+            "shifted_inputs": 0.18525524483387124
+          },
+          "worst_loss": 0.18525524483387124
+        },
+        {
+          "complexity": 2,
+          "generation": 1,
+          "id": "d3492ad07a46f3e80e9c357d6b845c6d05e9fbb8c2870c62c660e2f46564780f",
+          "mean_loss": 0.0024114004026858215,
+          "model": {
+            "coefficients": [
+              0.4040551828130026,
+              2.0239287286291834,
+              0.684826631387437
+            ],
+            "program": {
+              "features": [
+                "sin",
+                "x"
+              ],
+              "kind": "basis",
+              "ridge": 0.001
+            }
+          },
+          "operator": "one_edit_mutation",
+          "parent": "c3c09b950df149ce6da4f60b0d0e701740549647ab642570cb94b66722bfa3d3",
+          "program": {
+            "features": [
+              "sin",
+              "x"
+            ],
+            "kind": "basis",
+            "ridge": 0.001
+          },
+          "selection_score": 0.0033398267027410756,
+          "world_losses": {
+            "in_distribution": 0.0017798133723774042,
+            "proxy_failure": 0.002134561132938985,
+            "shifted_inputs": 0.0033198267027410755
+          },
+          "worst_loss": 0.0033198267027410755
+        },
+        {
+          "complexity": 0,
+          "generation": 1,
+          "id": "fc7f83330044909c77fd0968791268655a228fbb7b1983c477e39ab8d420e5da",
+          "mean_loss": 5.324219336055363,
+          "model": {
+            "coefficients": [
+              0.4955046480537303
+            ],
+            "program": {
+              "features": [],
+              "kind": "basis",
+              "ridge": 0.001
+            }
+          },
+          "operator": "one_edit_mutation",
+          "parent": "c3c09b950df149ce6da4f60b0d0e701740549647ab642570cb94b66722bfa3d3",
+          "program": {
+            "features": [],
+            "kind": "basis",
+            "ridge": 0.001
+          },
+          "selection_score": 5.723719384698259,
+          "world_losses": {
+            "in_distribution": 5.022482250819995,
+            "proxy_failure": 5.723719384698259,
+            "shifted_inputs": 5.226456372647837
+          },
+          "worst_loss": 5.723719384698259
+        },
+        {
+          "complexity": 4,
+          "generation": 1,
+          "id": "e09aac8586d6f957d8c3574049d5ba515b2d5d2fd2b6173868b89f0dbed33537",
+          "mean_loss": 0.0032405065539366958,
+          "model": {
+            "coefficients": [
+              0.43151775078939875,
+              -0.03621025322506178,
+              2.023052273192395,
+              0.6850441585342175,
+              -0.008636101320452871
+            ],
+            "program": {
+              "features": [
+                "cos",
+                "sin",
+                "x",
+                "x2"
+              ],
+              "kind": "basis",
+              "ridge": 0.001
+            }
+          },
+          "operator": "one_edit_mutation",
+          "parent": "72f86c7e2682b65e24c7b76cb5301dfeee5a21c68671865e13892d8bb81ff560",
+          "program": {
+            "features": [
+              "cos",
+              "sin",
+              "x",
+              "x2"
+            ],
+            "kind": "basis",
+            "ridge": 0.001
+          },
+          "selection_score": 0.005587002899195033,
+          "world_losses": {
+            "in_distribution": 0.0018222769547196031,
+            "proxy_failure": 0.002352239807895451,
+            "shifted_inputs": 0.005547002899195033
+          },
+          "worst_loss": 0.005547002899195033
+        },
+        {
+          "complexity": 1,
+          "generation": 1,
+          "id": "39add2ba1b8794adeb593342719c394e009bc3926ce67973d203fd8994c8fb2d",
+          "mean_loss": 2.5483827328824504,
+          "model": {
+            "coefficients": [
+              0.39574756555672624,
+              1.9595028244750845
+            ],
+            "program": {
+              "features": [
+                "x"
+              ],
+              "kind": "basis",
+              "ridge": 0.1
+            }
+          },
+          "operator": "one_edit_mutation",
+          "parent": "c3c09b950df149ce6da4f60b0d0e701740549647ab642570cb94b66722bfa3d3",
+          "program": {
+            "features": [
+              "x"
+            ],
+            "kind": "basis",
+            "ridge": 0.1
+          },
+          "selection_score": 7.44484490082435,
+          "world_losses": {
+            "in_distribution": 0.0972606035815754,
+            "proxy_failure": 0.10305269424142631,
+            "shifted_inputs": 7.44483490082435
+          },
+          "worst_loss": 7.44483490082435
+        },
+        {
+          "complexity": 6,
+          "generation": 1,
+          "id": "54b6bc4980c28dd56669dce54e564fd7e70fca6c685879655e1651bb817c19ea",
+          "mean_loss": 9.356310588346323,
+          "model": {
+            "coefficients": [
+              0.012559833163497422,
+              -0.012185890096566645,
+              0.998674950553804,
+              0.0003497317045816051,
+              0.004444984037014591,
+              -0.004698226413679322,
+              -0.0004158394972566895
+            ],
+            "program": {
+              "features": [
+                "cos",
+                "proxy",
+                "sin",
+                "x",
+                "x2",
+                "x3"
+              ],
+              "kind": "basis",
+              "ridge": 0.001
+            }
+          },
+          "operator": "one_edit_mutation",
+          "parent": "72f86c7e2682b65e24c7b76cb5301dfeee5a21c68671865e13892d8bb81ff560",
+          "program": {
+            "features": [
+              "cos",
+              "proxy",
+              "sin",
+              "x",
+              "x2",
+              "x3"
+            ],
+            "kind": "basis",
+            "ridge": 0.001
+          },
+          "selection_score": 28.06842766082851,
+          "world_losses": {
+            "in_distribution": 2.9476668505945503e-05,
+            "proxy_failure": 28.06836766082851,
+            "shifted_inputs": 0.0005346275419561636
+          },
+          "worst_loss": 28.06836766082851
+        },
+        {
+          "complexity": 4,
+          "generation": 1,
+          "id": "aaecf20e11fd04b6e727658712e513ca1399aed15c90f12c183fbb59e0eeeaec",
+          "mean_loss": 0.06063516904413879,
+          "model": {
+            "coefficients": [
+              0.3971820708065809,
+              1.7028486749214553,
+              0.9956539578576955,
+              0.0044784694919159365,
+              -0.04212900597187402
+            ],
+            "program": {
+              "features": [
+                "sin",
+                "x",
+                "x2",
+                "x3"
+              ],
+              "kind": "basis",
+              "ridge": 0.001
+            }
+          },
+          "operator": "one_edit_mutation",
+          "parent": "72f86c7e2682b65e24c7b76cb5301dfeee5a21c68671865e13892d8bb81ff560",
+          "program": {
+            "features": [
+              "sin",
+              "x",
+              "x2",
+              "x3"
+            ],
+            "kind": "basis",
+            "ridge": 0.001
+          },
+          "selection_score": 0.17779936479908237,
+          "world_losses": {
+            "in_distribution": 0.0018309427397356756,
+            "proxy_failure": 0.002315199593598345,
+            "shifted_inputs": 0.17775936479908236
+          },
+          "worst_loss": 0.17775936479908236
+        },
+        {
+          "complexity": 2,
+          "generation": 1,
+          "id": "28415d8fa675afaf6ce1cadd164e03bdd64c53f729b80e5b14e9f1e4902fcb5a",
+          "mean_loss": 2.5737695301871364,
+          "model": {
+            "coefficients": [
+              0.40946312928931805,
+              -0.03384383519562556,
+              1.9605779994598689
+            ],
+            "program": {
+              "features": [
+                "cos",
+                "x"
+              ],
+              "kind": "basis",
+              "ridge": 0.001
+            }
+          },
+          "operator": "one_edit_mutation",
+          "parent": "c3c09b950df149ce6da4f60b0d0e701740549647ab642570cb94b66722bfa3d3",
+          "program": {
+            "features": [
+              "cos",
+              "x"
+            ],
+            "kind": "basis",
+            "ridge": 0.001
+          },
+          "selection_score": 7.5182706249733195,
+          "world_losses": {
+            "in_distribution": 0.09830976676081055,
+            "proxy_failure": 0.10474819882727902,
+            "shifted_inputs": 7.518250624973319
+          },
+          "worst_loss": 7.518250624973319
+        },
+        {
+          "complexity": 2,
+          "generation": 1,
+          "id": "6d86e24ee89e47e64ce629605fa5e763731499f7d7906c970552c22ec96ac3ed",
+          "mean_loss": 9.386672692386137,
+          "model": {
+            "coefficients": [
+              1.979775622949199e-05,
+              1.0003225637276005,
+              0.0003782305689414235
+            ],
+            "program": {
+              "features": [
+                "proxy",
+                "x"
+              ],
+              "kind": "basis",
+              "ridge": 0.001
+            }
+          },
+          "operator": "one_edit_mutation",
+          "parent": "c3c09b950df149ce6da4f60b0d0e701740549647ab642570cb94b66722bfa3d3",
+          "program": {
+            "features": [
+              "proxy",
+              "x"
+            ],
+            "kind": "basis",
+            "ridge": 0.001
+          },
+          "selection_score": 28.15996843339267,
+          "world_losses": {
+            "in_distribution": 2.9093291792241212e-05,
+            "proxy_failure": 28.15994843339267,
+            "shifted_inputs": 4.055047394536379e-05
+          },
+          "worst_loss": 28.15994843339267
+        },
+        {
+          "complexity": 1,
+          "generation": 2,
+          "id": "5a71fb5ecb42afe2b50e927f01bb1f43fb78118ada3b3f1fd26655fd0f4c996c",
+          "mean_loss": 0.7740967739091942,
+          "model": {
+            "coefficients": [
+              0.41002008877232066,
+              3.0575867350321677
+            ],
+            "program": {
+              "features": [
+                "sin"
+              ],
+              "kind": "basis",
+              "ridge": 0.001
+            }
+          },
+          "operator": "one_edit_mutation",
+          "parent": "d3492ad07a46f3e80e9c357d6b845c6d05e9fbb8c2870c62c660e2f46564780f",
+          "program": {
+            "features": [
+              "sin"
+            ],
+            "kind": "basis",
+            "ridge": 0.001
+          },
+          "selection_score": 2.2683183978360737,
+          "world_losses": {
+            "in_distribution": 0.02544284139292834,
+            "proxy_failure": 0.028539082498580694,
+            "shifted_inputs": 2.2683083978360736
+          },
+          "worst_loss": 2.2683083978360736
+        },
+        {
+          "complexity": 2,
+          "generation": 2,
+          "id": "19eb7d66cb72449bca5808f6328b8a7b144016476edac4f8a37d860d3b79903f",
+          "mean_loss": 0.002433211093730784,
+          "model": {
+            "coefficients": [
+              0.40405796429229585,
+              2.024678068323808,
+              0.6843604766029645
+            ],
+            "program": {
+              "features": [
+                "sin",
+                "x"
+              ],
+              "kind": "basis",
+              "ridge": 1e-06
+            }
+          },
+          "operator": "one_edit_mutation",
+          "parent": "d3492ad07a46f3e80e9c357d6b845c6d05e9fbb8c2870c62c660e2f46564780f",
+          "program": {
+            "features": [
+              "sin",
+              "x"
+            ],
+            "kind": "basis",
+            "ridge": 1e-06
+          },
+          "selection_score": 0.0034058405329364322,
+          "world_losses": {
+            "in_distribution": 0.0017795828967914215,
+            "proxy_failure": 0.002134209851464499,
+            "shifted_inputs": 0.003385840532936432
+          },
+          "worst_loss": 0.003385840532936432
+        },
+        {
+          "complexity": 3,
+          "generation": 2,
+          "id": "73c50d7a492af21a4dd724c14d28c1ca49b73ed0d66c9022a20eeef928101252",
+          "mean_loss": 0.07436571890059902,
+          "model": {
+            "coefficients": [
+              0.40374568850450004,
+              1.6791642467376813,
+              1.019208950213338,
+              -0.045377127450493826
+            ],
+            "program": {
+              "features": [
+                "sin",
+                "x",
+                "x3"
+              ],
+              "kind": "basis",
+              "ridge": 0.001
+            }
+          },
+          "operator": "one_edit_mutation",
+          "parent": "d3492ad07a46f3e80e9c357d6b845c6d05e9fbb8c2870c62c660e2f46564780f",
+          "program": {
+            "features": [
+              "sin",
+              "x",
+              "x3"
+            ],
+            "kind": "basis",
+            "ridge": 0.001
+          },
+          "selection_score": 0.21918146264554864,
+          "world_losses": {
+            "in_distribution": 0.0017868468893315898,
+            "proxy_failure": 0.0021588471669168733,
+            "shifted_inputs": 0.21915146264554863
+          },
+          "worst_loss": 0.21915146264554863
+        },
+        {
+          "complexity": 3,
+          "generation": 2,
+          "id": "f42fc0d2c73d88fea0913c40c4b21fe944594c7b236d7f2d3aa08ff0d8946622",
+          "mean_loss": 0.9079495096586253,
+          "model": {
+            "coefficients": [
+              0.5423638488755522,
+              -0.14327368247257896,
+              3.056928599447859,
+              -0.05027800733906851
+            ],
+            "program": {
+              "features": [
+                "cos",
+                "sin",
+                "x2"
+              ],
+              "kind": "basis",
+              "ridge": 0.001
+            }
+          },
+          "operator": "one_edit_mutation",
+          "parent": "e09aac8586d6f957d8c3574049d5ba515b2d5d2fd2b6173868b89f0dbed33537",
+          "program": {
+            "features": [
+              "cos",
+              "sin",
+              "x2"
+            ],
+            "kind": "basis",
+            "ridge": 0.001
+          },
+          "selection_score": 2.669878642933314,
+          "world_losses": {
+            "in_distribution": 0.0251794151681204,
+            "proxy_failure": 0.02882047087444159,
+            "shifted_inputs": 2.6698486429333137
+          },
+          "worst_loss": 2.6698486429333137
+        },
+        {
+          "complexity": 4,
+          "generation": 2,
+          "id": "5637f07bf7f602f812c2a37b375832456044df10fb75cda70667db193cf982fc",
+          "mean_loss": 0.2334720610791,
+          "model": {
+            "coefficients": [
+              0.4355067953570329,
+              -0.040123601586851756,
+              2.730258014447201,
+              -0.009824200912624235,
+              0.09271791714469194
+            ],
+            "program": {
+              "features": [
+                "cos",
+                "sin",
+                "x2",
+                "x3"
+              ],
+              "kind": "basis",
+              "ridge": 1e-06
+            }
+          },
+          "operator": "one_edit_mutation",
+          "parent": "1d24744b0bbcafa492f115000eba09d14f9560dc617457078774f01d1f6b3a97",
+          "program": {
+            "features": [
+              "cos",
+              "sin",
+              "x2",
+              "x3"
+            ],
+            "kind": "basis",
+            "ridge": 1e-06
+          },
+          "selection_score": 0.696234699062627,
+          "world_losses": {
+            "in_distribution": 0.001850584051234929,
+            "proxy_failure": 0.002370900123438168,
+            "shifted_inputs": 0.696194699062627
+          },
+          "worst_loss": 0.696194699062627
+        },
+        {
+          "complexity": 3,
+          "generation": 2,
+          "id": "c4b4a259570e42512ac816fe4c60c77cb081fa38db64e13f72d865a447966624",
+          "mean_loss": 0.002398988799486107,
+          "model": {
+            "coefficients": [
+              0.4092748915890826,
+              -0.012802896096847328,
+              2.022941106976888,
+              0.6851628295520028
+            ],
+            "program": {
+              "features": [
+                "cos",
+                "sin",
+                "x"
+              ],
+              "kind": "basis",
+              "ridge": 0.001
+            }
+          },
+          "operator": "one_edit_mutation",
+          "parent": "d3492ad07a46f3e80e9c357d6b845c6d05e9fbb8c2870c62c660e2f46564780f",
+          "program": {
+            "features": [
+              "cos",
+              "sin",
+              "x"
+            ],
+            "kind": "basis",
+            "ridge": 0.001
+          },
+          "selection_score": 0.0030871494363439076,
+          "world_losses": {
+            "in_distribution": 0.001818812031685983,
+            "proxy_failure": 0.0023210049304284307,
+            "shifted_inputs": 0.0030571494363439075
+          },
+          "worst_loss": 0.0030571494363439075
+        },
+        {
+          "complexity": 3,
+          "generation": 2,
+          "id": "fc6a76eb185271ec7c264e9874183a27ce78793970f6176edba4679a2f2a9436",
+          "mean_loss": 2.7585973791328176,
+          "model": {
+            "coefficients": [
+              0.30773192198107846,
+              0.07321862467687547,
+              1.9608002032638259,
+              0.03949854635474586
+            ],
+            "program": {
+              "features": [
+                "cos",
+                "x",
+                "x2"
+              ],
+              "kind": "basis",
+              "ridge": 0.001
+            }
+          },
+          "operator": "one_edit_mutation",
+          "parent": "e09aac8586d6f957d8c3574049d5ba515b2d5d2fd2b6173868b89f0dbed33537",
+          "program": {
+            "features": [
+              "cos",
+              "x",
+              "x2"
+            ],
+            "kind": "basis",
+            "ridge": 0.001
+          },
+          "selection_score": 8.073025056772185,
+          "world_losses": {
+            "in_distribution": 0.09807091701746323,
+            "proxy_failure": 0.10472616360880625,
+            "shifted_inputs": 8.072995056772184
+          },
+          "worst_loss": 8.072995056772184
+        },
+        {
+          "complexity": 5,
+          "generation": 2,
+          "id": "fe8491d1e0fcf417139d35a7feba32df789bd5959c884e3c2f0e17c6bf066bea",
+          "mean_loss": 9.361821575414359,
+          "model": {
+            "coefficients": [
+              0.0009196620471596788,
+              0.9989902063985863,
+              -0.001447618527673613,
+              0.005365529654102304,
+              -0.0002483782463672447,
+              -0.0005621833706592681
+            ],
+            "program": {
+              "features": [
+                "proxy",
+                "sin",
+                "x",
+                "x2",
+                "x3"
+              ],
+              "kind": "basis",
+              "ridge": 0.001
+            }
+          },
+          "operator": "one_edit_mutation",
+          "parent": "aaecf20e11fd04b6e727658712e513ca1399aed15c90f12c183fbb59e0eeeaec",
+          "program": {
+            "features": [
+              "proxy",
+              "sin",
+              "x",
+              "x2",
+              "x3"
+            ],
+            "kind": "basis",
+            "ridge": 0.001
+          },
+          "selection_score": 28.085416349750716,
+          "world_losses": {
+            "in_distribution": 2.965998529901499e-05,
+            "proxy_failure": 28.085366349750714,
+            "shifted_inputs": 6.871650706523019e-05
+          },
+          "worst_loss": 28.085366349750714
+        },
+        {
+          "complexity": 4,
+          "generation": 2,
+          "id": "e3d64b572d8c0092e70b1925c8cdb631a609b22d4902352077b8d9503431e2a5",
+          "mean_loss": 0.00328935750329798,
+          "model": {
+            "coefficients": [
+              0.43179658086914385,
+              -0.03649707252269828,
+              2.0238030276452474,
+              0.6845766495904986,
+              -0.008744303134760196
+            ],
+            "program": {
+              "features": [
+                "cos",
+                "sin",
+                "x",
+                "x2"
+              ],
+              "kind": "basis",
+              "ridge": 1e-06
+            }
+          },
+          "operator": "one_edit_mutation",
+          "parent": "1d24744b0bbcafa492f115000eba09d14f9560dc617457078774f01d1f6b3a97",
+          "program": {
+            "features": [
+              "cos",
+              "sin",
+              "x",
+              "x2"
+            ],
+            "kind": "basis",
+            "ridge": 1e-06
+          },
+          "selection_score": 0.005734251198159374,
+          "world_losses": {
+            "in_distribution": 0.0018218369191528043,
+            "proxy_failure": 0.0023519843925817606,
+            "shifted_inputs": 0.005694251198159374
+          },
+          "worst_loss": 0.005694251198159374
+        },
+        {
+          "complexity": 4,
+          "generation": 2,
+          "id": "fa8556bf08e3229370fa9f7a51a17de4f0aeec5a89a0eb272af4230a9fe3e2b5",
+          "mean_loss": 0.02366518923219203,
+          "model": {
+            "coefficients": [
+              0.3972375917706077,
+              1.8349469932015825,
+              0.8677415186216288,
+              0.004522416266699876,
+              -0.024820957396060342
+            ],
+            "program": {
+              "features": [
+                "sin",
+                "x",
+                "x2",
+                "x3"
+              ],
+              "kind": "basis",
+              "ridge": 1e-06
+            }
+          },
+          "operator": "one_edit_mutation",
+          "parent": "aaecf20e11fd04b6e727658712e513ca1399aed15c90f12c183fbb59e0eeeaec",
+          "program": {
+            "features": [
+              "sin",
+              "x",
+              "x2",
+              "x3"
+            ],
+            "kind": "basis",
+            "ridge": 1e-06
+          },
+          "selection_score": 0.06690723170887986,
+          "world_losses": {
+            "in_distribution": 0.0018221921514168591,
+            "proxy_failure": 0.0023061438362793735,
+            "shifted_inputs": 0.06686723170887986
+          },
+          "worst_loss": 0.06686723170887986
+        },
+        {
+          "complexity": 4,
+          "generation": 2,
+          "id": "e8304f4d7d7896cf234d9f51650169f9d4cd2e94192011588034a838375da068",
+          "mean_loss": 0.0035491921546693447,
+          "model": {
+            "coefficients": [
+              0.4155561387133032,
+              -0.02008100302226272,
+              1.9532818362221558,
+              0.7283867994731958,
+              -0.0024265493502964794
+            ],
+            "program": {
+              "features": [
+                "cos",
+                "sin",
+                "x",
+                "x2"
+              ],
+              "kind": "basis",
+              "ridge": 0.1
+            }
+          },
+          "operator": "one_edit_mutation",
+          "parent": "e09aac8586d6f957d8c3574049d5ba515b2d5d2fd2b6173868b89f0dbed33537",
+          "program": {
+            "features": [
+              "cos",
+              "sin",
+              "x",
+              "x2"
+            ],
+            "kind": "basis",
+            "ridge": 0.1
+          },
+          "selection_score": 0.00618292328700839,
+          "world_losses": {
+            "in_distribution": 0.001987240565252183,
+            "proxy_failure": 0.0025174126117474605,
+            "shifted_inputs": 0.00614292328700839
+          },
+          "worst_loss": 0.00614292328700839
+        },
+        {
+          "complexity": 4,
+          "generation": 2,
+          "id": "7820c015ba13aa457bf99a19e5da20d149ba0148ca2c305da8866190a691c923",
+          "mean_loss": 0.025045476186056667,
+          "model": {
+            "coefficients": [
+              0.40903024430497636,
+              -0.012607775806399907,
+              1.837306217432538,
+              0.8654312394131382,
+              -0.024514784403396998
+            ],
+            "program": {
+              "features": [
+                "cos",
+                "sin",
+                "x",
+                "x3"
+              ],
+              "kind": "basis",
+              "ridge": 1e-06
+            }
+          },
+          "operator": "one_edit_mutation",
+          "parent": "1d24744b0bbcafa492f115000eba09d14f9560dc617457078774f01d1f6b3a97",
+          "program": {
+            "features": [
+              "cos",
+              "sin",
+              "x",
+              "x3"
+            ],
+            "kind": "basis",
+            "ridge": 1e-06
+          },
+          "selection_score": 0.07102362977009985,
+          "world_losses": {
+            "in_distribution": 0.0018250389910194908,
+            "proxy_failure": 0.0023277597970506585,
+            "shifted_inputs": 0.07098362977009985
+          },
+          "worst_loss": 0.07098362977009985
+        },
+        {
+          "complexity": 5,
+          "generation": 2,
+          "id": "ff6fd82fd9b7ad97bf27f61ca4bab3b642da00d11e82c22d0762917110e5b3ba",
+          "mean_loss": 9.357293870429748,
+          "model": {
+            "coefficients": [
+              0.012552330196158692,
+              -0.012199836123995679,
+              0.9987300562145282,
+              0.003397554961478963,
+              0.0013429776382562813,
+              -0.004702464639292066
+            ],
+            "program": {
+              "features": [
+                "cos",
+                "proxy",
+                "sin",
+                "x",
+                "x2"
+              ],
+              "kind": "basis",
+              "ridge": 0.001
+            }
+          },
+          "operator": "one_edit_mutation",
+          "parent": "e09aac8586d6f957d8c3574049d5ba515b2d5d2fd2b6173868b89f0dbed33537",
+          "program": {
+            "features": [
+              "cos",
+              "proxy",
+              "sin",
+              "x",
+              "x2"
+            ],
+            "kind": "basis",
+            "ridge": 0.001
+          },
+          "selection_score": 28.071471506197753,
+          "world_losses": {
+            "in_distribution": 2.9442397182385353e-05,
+            "proxy_failure": 28.07142150619775,
+            "shifted_inputs": 0.00043066269430983153
+          },
+          "worst_loss": 28.07142150619775
+        },
+        {
+          "complexity": 4,
+          "generation": 2,
+          "id": "2e2a2cab663f1119e94a5d8345e04b4af96b0c380549f087f678a2d39a257253",
+          "mean_loss": 0.22720042829220133,
+          "model": {
+            "coefficients": [
+              0.3967998197296705,
+              1.3378089509066762,
+              1.3406602859133554,
+              0.004508230746082646,
+              -0.08715379587212352
+            ],
+            "program": {
+              "features": [
+                "sin",
+                "x",
+                "x2",
+                "x3"
+              ],
+              "kind": "basis",
+              "ridge": 0.1
+            }
+          },
+          "operator": "one_edit_mutation",
+          "parent": "aaecf20e11fd04b6e727658712e513ca1399aed15c90f12c183fbb59e0eeeaec",
+          "program": {
+            "features": [
+              "sin",
+              "x",
+              "x2",
+              "x3"
+            ],
+            "kind": "basis",
+            "ridge": 0.1
+          },
+          "selection_score": 0.6772979285261769,
+          "world_losses": {
+            "in_distribution": 0.001933012959878511,
+            "proxy_failure": 0.0024103433905486465,
+            "shifted_inputs": 0.6772579285261768
+          },
+          "worst_loss": 0.6772579285261768
+        },
+        {
+          "complexity": 3,
+          "generation": 2,
+          "id": "19d136311d2c81d2c4f6aad8fbb4be6046323a2c6d6c391d3ce2e7e87bf15b0a",
+          "mean_loss": 0.0023090546993219346,
+          "model": {
+            "coefficients": [
+              0.3973020311961158,
+              2.0229094490330097,
+              0.6852165873812534,
+              0.004592291665512276
+            ],
+            "program": {
+              "features": [
+                "sin",
+                "x",
+                "x2"
+              ],
+              "kind": "basis",
+              "ridge": 0.001
+            }
+          },
+          "operator": "one_edit_mutation",
+          "parent": "e09aac8586d6f957d8c3574049d5ba515b2d5d2fd2b6173868b89f0dbed33537",
+          "program": {
+            "features": [
+              "sin",
+              "x",
+              "x2"
+            ],
+            "kind": "basis",
+            "ridge": 0.001
+          },
+          "selection_score": 0.0028422467323845424,
+          "world_losses": {
+            "in_distribution": 0.0018158984055872936,
+            "proxy_failure": 0.0022990189599939683,
+            "shifted_inputs": 0.0028122467323845424
+          },
+          "worst_loss": 0.0028122467323845424
+        },
+        {
+          "complexity": 6,
+          "generation": 2,
+          "id": "6f889f22efd4ec6bf0983436f3d170f81dffd3b82611599a51ddff43ea2edb3f",
+          "mean_loss": 9.500422113792363,
+          "model": {
+            "coefficients": [
+              0.009431870040440053,
+              -0.012093735694185662,
+              1.006339448528002,
+              -0.014485145518337562,
+              -0.0014486365463628808,
+              -0.004701462895136207,
+              -0.00032758770136586914
+            ],
+            "program": {
+              "features": [
+                "cos",
+                "proxy",
+                "sin",
+                "x",
+                "x2",
+                "x3"
+              ],
+              "kind": "basis",
+              "ridge": 1e-06
+            }
+          },
+          "operator": "one_edit_mutation",
+          "parent": "1d24744b0bbcafa492f115000eba09d14f9560dc617457078774f01d1f6b3a97",
+          "program": {
+            "features": [
+              "cos",
+              "proxy",
+              "sin",
+              "x",
+              "x2",
+              "x3"
+            ],
+            "kind": "basis",
+            "ridge": 1e-06
+          },
+          "selection_score": 28.500792473552558,
+          "world_losses": {
+            "in_distribution": 2.9098847181349864e-05,
+            "proxy_failure": 28.500732473552556,
+            "shifted_inputs": 0.0005047689773491585
+          },
+          "worst_loss": 28.500732473552556
+        },
+        {
+          "complexity": 2,
+          "generation": 2,
+          "id": "f5b4fe66e0a95607e031541c744c0f62158371ab6f86e6db0064461aefb64159",
+          "mean_loss": 0.0034381952974547477,
+          "model": {
+            "coefficients": [
+              0.4038005904068569,
+              1.9542392297451596,
+              0.72809928069007
+            ],
+            "program": {
+              "features": [
+                "sin",
+                "x"
+              ],
+              "kind": "basis",
+              "ridge": 0.1
+            }
+          },
+          "operator": "one_edit_mutation",
+          "parent": "d3492ad07a46f3e80e9c357d6b845c6d05e9fbb8c2870c62c660e2f46564780f",
+          "program": {
+            "features": [
+              "sin",
+              "x"
+            ],
+            "kind": "basis",
+            "ridge": 0.1
+          },
+          "selection_score": 0.0061222208893509916,
+          "world_losses": {
+            "in_distribution": 0.0019218676613225714,
+            "proxy_failure": 0.0022904973416906795,
+            "shifted_inputs": 0.0061022208893509915
+          },
+          "worst_loss": 0.0061022208893509915
+        },
+        {
+          "complexity": 4,
+          "generation": 2,
+          "id": "8da5ddb01a70659e5f1685fbefa8d615ce497de5190d3cbc41d34f7c2f55209f",
+          "mean_loss": 2.213746464183281,
+          "model": {
+            "coefficients": [
+              0.4213422061282893,
+              -0.02630068599805159,
+              2.645406356336385,
+              -0.005712132387616642,
+              -0.26555009143642866
+            ],
+            "program": {
+              "features": [
+                "cos",
+                "x",
+                "x2",
+                "x3"
+              ],
+              "kind": "basis",
+              "ridge": 1e-06
+            }
+          },
+          "operator": "one_edit_mutation",
+          "parent": "1d24744b0bbcafa492f115000eba09d14f9560dc617457078774f01d1f6b3a97",
+          "program": {
+            "features": [
+              "cos",
+              "x",
+              "x2",
+              "x3"
+            ],
+            "kind": "basis",
+            "ridge": 1e-06
+          },
+          "selection_score": 6.636379790048607,
+          "world_losses": {
+            "in_distribution": 0.002205731753007364,
+            "proxy_failure": 0.0026938707482295665,
+            "shifted_inputs": 6.6363397900486065
+          },
+          "worst_loss": 6.6363397900486065
+        },
+        {
+          "complexity": 3,
+          "generation": 2,
+          "id": "b952795f677ff575814925b52c39ec0b1e1a7800413be7f44b813324693a9f67",
+          "mean_loss": 9.344124081302411,
+          "model": {
+            "coefficients": [
+              0.0009369016973084367,
+              0.9980527191583284,
+              0.004665313766821356,
+              0.0018854108495475947
+            ],
+            "program": {
+              "features": [
+                "proxy",
+                "sin",
+                "x"
+              ],
+              "kind": "basis",
+              "ridge": 0.001
+            }
+          },
+          "operator": "one_edit_mutation",
+          "parent": "d3492ad07a46f3e80e9c357d6b845c6d05e9fbb8c2870c62c660e2f46564780f",
+          "program": {
+            "features": [
+              "proxy",
+              "sin",
+              "x"
+            ],
+            "kind": "basis",
+            "ridge": 0.001
+          },
+          "selection_score": 28.032332959118712,
+          "world_losses": {
+            "in_distribution": 2.925667528260611e-05,
+            "proxy_failure": 28.032302959118713,
+            "shifted_inputs": 4.002811323772557e-05
+          },
+          "worst_loss": 28.032302959118713
+        },
+        {
+          "complexity": 3,
+          "generation": 2,
+          "id": "adca774f3415d4b0a9ec57f07fbd815424194cd635bdc07302d55d35a4eed485",
+          "mean_loss": 2.1700940714338626,
+          "model": {
+            "coefficients": [
+              0.3964854692443146,
+              2.645260623883444,
+              0.00389929006542635,
+              -0.2654800888359422
+            ],
+            "program": {
+              "features": [
+                "x",
+                "x2",
+                "x3"
+              ],
+              "kind": "basis",
+              "ridge": 0.001
+            }
+          },
+          "operator": "one_edit_mutation",
+          "parent": "aaecf20e11fd04b6e727658712e513ca1399aed15c90f12c183fbb59e0eeeaec",
+          "program": {
+            "features": [
+              "x",
+              "x2",
+              "x3"
+            ],
+            "kind": "basis",
+            "ridge": 0.001
+          },
+          "selection_score": 6.505457126994674,
+          "world_losses": {
+            "in_distribution": 0.0022019431368729895,
+            "proxy_failure": 0.0026531441700395173,
+            "shifted_inputs": 6.505427126994674
+          },
+          "worst_loss": 6.505427126994674
+        },
+        {
+          "complexity": 3,
+          "generation": 2,
+          "id": "2bb09706838cf2f80deab81b7874d5bb21d1d76ce440d225b1b3afccadb93d09",
+          "mean_loss": 0.2548438288008285,
+          "model": {
+            "coefficients": [
+              0.39758833089072654,
+              2.7301162531293035,
+              0.00483717361508686,
+              0.09277746626854139
+            ],
+            "program": {
+              "features": [
+                "sin",
+                "x2",
+                "x3"
+              ],
+              "kind": "basis",
+              "ridge": 0.001
+            }
+          },
+          "operator": "one_edit_mutation",
+          "parent": "aaecf20e11fd04b6e727658712e513ca1399aed15c90f12c183fbb59e0eeeaec",
+          "program": {
+            "features": [
+              "sin",
+              "x2",
+              "x3"
+            ],
+            "kind": "basis",
+            "ridge": 0.001
+          },
+          "selection_score": 0.7604028192814979,
+          "world_losses": {
+            "in_distribution": 0.0018445225708018308,
+            "proxy_failure": 0.002314144550185775,
+            "shifted_inputs": 0.7603728192814979
+          },
+          "worst_loss": 0.7603728192814979
+        },
+        {
+          "complexity": 3,
+          "generation": 3,
+          "id": "e4b482ac8199217e7310e9c3cc8475810d57fa861fbb38953d594b259382d3e7",
+          "mean_loss": 0.004439341642941032,
+          "model": {
+            "coefficients": [
+              0.39659043520593956,
+              1.9532100425668948,
+              0.7284780060795546,
+              0.0049032432666257595
+            ],
+            "program": {
+              "features": [
+                "sin",
+                "x",
+                "x2"
+              ],
+              "kind": "basis",
+              "ridge": 0.1
+            }
+          },
+          "operator": "one_edit_mutation",
+          "parent": "19d136311d2c81d2c4f6aad8fbb4be6046323a2c6d6c391d3ce2e7e87bf15b0a",
+          "program": {
+            "features": [
+              "sin",
+              "x",
+              "x2"
+            ],
+            "kind": "basis",
+            "ridge": 0.1
+          },
+          "selection_score": 0.008876768553780393,
+          "world_losses": {
+            "in_distribution": 0.0019827577976316746,
+            "proxy_failure": 0.0024884985774110287,
+            "shifted_inputs": 0.008846768553780393
+          },
+          "worst_loss": 0.008846768553780393
+        },
+        {
+          "complexity": 2,
+          "generation": 3,
+          "id": "9b75c197a08947ec9c9f1ac646c8db7bf00c634aa0791d0078461a199c509f30",
+          "mean_loss": 0.7716524557545211,
+          "model": {
+            "coefficients": [
+              0.41287309109723136,
+              -0.006993917377181247,
+              3.0573244276120177
+            ],
+            "program": {
+              "features": [
+                "cos",
+                "sin"
+              ],
+              "kind": "basis",
+              "ridge": 0.001
+            }
+          },
+          "operator": "one_edit_mutation",
+          "parent": "c4b4a259570e42512ac816fe4c60c77cb081fa38db64e13f72d865a447966624",
+          "program": {
+            "features": [
+              "cos",
+              "sin"
+            ],
+            "kind": "basis",
+            "ridge": 0.001
+          },
+          "selection_score": 2.2611326111415524,
+          "world_losses": {
+            "in_distribution": 0.025358576077808278,
+            "proxy_failure": 0.028486180044202915,
+            "shifted_inputs": 2.2611126111415523
+          },
+          "worst_loss": 2.2611126111415523
+        },
+        {
+          "complexity": 4,
+          "generation": 3,
+          "id": "25faf213151688e83362950a0f6688bd62bf3f55a1260a91e0eee62ba6863b89",
+          "mean_loss": 9.363198247879513,
+          "model": {
+            "coefficients": [
+              0.0008914976287084618,
+              0.9990652230370486,
+              0.002671684911013661,
+              0.0011715880776302645,
+              -0.00024722274947397345
+            ],
+            "program": {
+              "features": [
+                "proxy",
+                "sin",
+                "x",
+                "x2"
+              ],
+              "kind": "basis",
+              "ridge": 0.001
+            }
+          },
+          "operator": "one_edit_mutation",
+          "parent": "19d136311d2c81d2c4f6aad8fbb4be6046323a2c6d6c391d3ce2e7e87bf15b0a",
+          "program": {
+            "features": [
+              "proxy",
+              "sin",
+              "x",
+              "x2"
+            ],
+            "kind": "basis",
+            "ridge": 0.001
+          },
+          "selection_score": 28.0895641904312,
+          "world_losses": {
+            "in_distribution": 2.9613905316025785e-05,
+            "proxy_failure": 28.089524190431202,
+            "shifted_inputs": 4.09393020195254e-05
+          },
+          "worst_loss": 28.089524190431202
+        },
+        {
+          "complexity": 3,
+          "generation": 3,
+          "id": "b9cd41da69a93cc54db3b9dac0f7812fbf813edb2fe0e6a2cc934b4c96187104",
+          "mean_loss": 0.003777027191142352,
+          "model": {
+            "coefficients": [
+              0.40932316236424465,
+              -0.013545155740296015,
+              1.9532498861753684,
+              0.7284196433053008
+            ],
+            "program": {
+              "features": [
+                "cos",
+                "sin",
+                "x"
+              ],
+              "kind": "basis",
+              "ridge": 0.1
+            }
+          },
+          "operator": "one_edit_mutation",
+          "parent": "c4b4a259570e42512ac816fe4c60c77cb081fa38db64e13f72d865a447966624",
+          "program": {
+            "features": [
+              "cos",
+              "sin",
+              "x"
+            ],
+            "kind": "basis",
+            "ridge": 0.1
+          },
+          "selection_score": 0.006864845227759102,
+          "world_losses": {
+            "in_distribution": 0.0019864129607747322,
+            "proxy_failure": 0.002509823384893222,
+            "shifted_inputs": 0.006834845227759102
+          },
+          "worst_loss": 0.006834845227759102
+        },
+        {
+          "complexity": 3,
+          "generation": 3,
+          "id": "775224584538884b1975673f7b4701511be534c9185d1ed2ade82437dc5bf5e8",
+          "mean_loss": 0.0023196971233135845,
+          "model": {
+            "coefficients": [
+              0.39730967164867115,
+              2.023658927408482,
+              0.6847505308846327,
+              0.0045889856495645405
+            ],
+            "program": {
+              "features": [
+                "sin",
+                "x",
+                "x2"
+              ],
+              "kind": "basis",
+              "ridge": 1e-06
+            }
+          },
+          "operator": "one_edit_mutation",
+          "parent": "19d136311d2c81d2c4f6aad8fbb4be6046323a2c6d6c391d3ce2e7e87bf15b0a",
+          "program": {
+            "features": [
+              "sin",
+              "x",
+              "x2"
+            ],
+            "kind": "basis",
+            "ridge": 1e-06
+          },
+          "selection_score": 0.002875352491336717,
+          "world_losses": {
+            "in_distribution": 0.0018154172842044867,
+            "proxy_failure": 0.00229832159439955,
+            "shifted_inputs": 0.0028453524913367167
+          },
+          "worst_loss": 0.0028453524913367167
+        },
+        {
+          "complexity": 3,
+          "generation": 3,
+          "id": "c8ed809ac40121511732608a05d0119407171ad7b027e078efd196dd56666158",
+          "mean_loss": 9.483927128805282,
+          "model": {
+            "coefficients": [
+              -0.002068589819237611,
+              1.0054937714304906,
+              -0.010393385060357018,
+              -0.003203851759485335
+            ],
+            "program": {
+              "features": [
+                "proxy",
+                "sin",
+                "x"
+              ],
+              "kind": "basis",
+              "ridge": 1e-06
+            }
+          },
+          "operator": "one_edit_mutation",
+          "parent": "19eb7d66cb72449bca5808f6328b8a7b144016476edac4f8a37d860d3b79903f",
+          "program": {
+            "features": [
+              "proxy",
+              "sin",
+              "x"
+            ],
+            "kind": "basis",
+            "ridge": 1e-06
+          },
+          "selection_score": 28.451741606156503,
+          "world_losses": {
+            "in_distribution": 2.880953587068091e-05,
+            "proxy_failure": 28.451711606156504,
+            "shifted_inputs": 4.0970723471097025e-05
+          },
+          "worst_loss": 28.451711606156504
+        },
+        {
+          "complexity": 3,
+          "generation": 3,
+          "id": "e8f87f434b08dfca643cf26d4782c0abf1f529ed3162e342d2b2c759c0e0b60b",
+          "mean_loss": 0.034487663105272334,
+          "model": {
+            "coefficients": [
+              0.40385787092524517,
+              1.8025075675296842,
+              0.8997854936338285,
+              -0.02921941623926542
+            ],
+            "program": {
+              "features": [
+                "sin",
+                "x",
+                "x3"
+              ],
+              "kind": "basis",
+              "ridge": 1e-06
+            }
+          },
+          "operator": "one_edit_mutation",
+          "parent": "19eb7d66cb72449bca5808f6328b8a7b144016476edac4f8a37d860d3b79903f",
+          "program": {
+            "features": [
+              "sin",
+              "x",
+              "x3"
+            ],
+            "kind": "basis",
+            "ridge": 1e-06
+          },
+          "selection_score": 0.09956337725288027,
+          "world_losses": {
+            "in_distribution": 0.0017817032862114982,
+            "proxy_failure": 0.0021479087767252466,
+            "shifted_inputs": 0.09953337725288026
+          },
+          "worst_loss": 0.09953337725288026
+        },
+        {
+          "complexity": 3,
+          "generation": 3,
+          "id": "01692d289db85a3648de3b492bcfe5e896ec07c585efec051be0b7a42c2ae36e",
+          "mean_loss": 0.002417177034483778,
+          "model": {
+            "coefficients": [
+              0.4092744271349455,
+              -0.012794940616687529,
+              2.023690496039483,
+              0.6846968249578486
+            ],
+            "program": {
+              "features": [
+                "cos",
+                "sin",
+                "x"
+              ],
+              "kind": "basis",
+              "ridge": 1e-06
+            }
+          },
+          "operator": "one_edit_mutation",
+          "parent": "19eb7d66cb72449bca5808f6328b8a7b144016476edac4f8a37d860d3b79903f",
+          "program": {
+            "features": [
+              "cos",
+              "sin",
+              "x"
+            ],
+            "kind": "basis",
+            "ridge": 1e-06
+          },
+          "selection_score": 0.0031428985802749872,
+          "world_losses": {
+            "in_distribution": 0.0018183210148940748,
+            "proxy_failure": 0.002320311508282273,
+            "shifted_inputs": 0.003112898580274987
+          },
+          "worst_loss": 0.003112898580274987
+        },
+        {
+          "complexity": 2,
+          "generation": 3,
+          "id": "f90852e3934d6be9775ce574c097f491f5ea7f9de939a430d193b800d15e4e32",
+          "mean_loss": 0.7671885859586834,
+          "model": {
+            "coefficients": [
+              0.4069916168784199,
+              3.057393493111162,
+              0.002060463840334372
+            ],
+            "program": {
+              "features": [
+                "sin",
+                "x2"
+              ],
+              "kind": "basis",
+              "ridge": 0.001
+            }
+          },
+          "operator": "one_edit_mutation",
+          "parent": "19d136311d2c81d2c4f6aad8fbb4be6046323a2c6d6c391d3ce2e7e87bf15b0a",
+          "program": {
+            "features": [
+              "sin",
+              "x2"
+            ],
+            "kind": "basis",
+            "ridge": 0.001
+          },
+          "selection_score": 2.247720032636852,
+          "world_losses": {
+            "in_distribution": 0.02538293029102019,
+            "proxy_failure": 0.028482794948178288,
+            "shifted_inputs": 2.247700032636852
+          },
+          "worst_loss": 2.247700032636852
+        },
+        {
+          "complexity": 4,
+          "generation": 3,
+          "id": "8f03514ee7cad5f318d4288f579c4335267276e1bd9435196376c7e458fdf549",
+          "mean_loss": 9.35982961646952,
+          "model": {
+            "coefficients": [
+              0.0003765011640248945,
+              0.0005478610538527239,
+              0.9988871706224255,
+              0.0030193111971393554,
+              0.0013000310847314236
+            ],
+            "program": {
+              "features": [
+                "cos",
+                "proxy",
+                "sin",
+                "x"
+              ],
+              "kind": "basis",
+              "ridge": 0.001
+            }
+          },
+          "operator": "one_edit_mutation",
+          "parent": "c4b4a259570e42512ac816fe4c60c77cb081fa38db64e13f72d865a447966624",
+          "program": {
+            "features": [
+              "cos",
+              "proxy",
+              "sin",
+              "x"
+            ],
+            "kind": "basis",
+            "ridge": 0.001
+          },
+          "selection_score": 28.079459421805854,
+          "world_losses": {
+            "in_distribution": 2.955304949536151e-05,
+            "proxy_failure": 28.079419421805856,
+            "shifted_inputs": 3.987455320733972e-05
+          },
+          "worst_loss": 28.079419421805856
+        },
+        {
+          "complexity": 1,
+          "generation": 3,
+          "id": "d170bc3df51380bd35241da00de596438c348d4f75fb7ac900b179bc6f7a7fbf",
+          "mean_loss": 0.7741098859154342,
+          "model": {
+            "coefficients": [
+              0.41001815757633686,
+              3.0576558094857575
+            ],
+            "program": {
+              "features": [
+                "sin"
+              ],
+              "kind": "basis",
+              "ridge": 1e-06
+            }
+          },
+          "operator": "one_edit_mutation",
+          "parent": "19eb7d66cb72449bca5808f6328b8a7b144016476edac4f8a37d860d3b79903f",
+          "program": {
+            "features": [
+              "sin"
+            ],
+            "kind": "basis",
+            "ridge": 1e-06
+          },
+          "selection_score": 2.2683546246603665,
+          "world_losses": {
+            "in_distribution": 0.025445545735355356,
+            "proxy_failure": 0.02853948735058101,
+            "shifted_inputs": 2.2683446246603665
+          },
+          "worst_loss": 2.2683446246603665
+        },
+        {
+          "complexity": 2,
+          "generation": 4,
+          "id": "6116a5341843536e7c197786968054339027a3becf7ae27098318f4746240aee",
+          "mean_loss": 2.6319079996563,
+          "model": {
+            "coefficients": [
+              0.37691486088912524,
+              1.9606521801445465,
+              0.012750541258178042
+            ],
+            "program": {
+              "features": [
+                "x",
+                "x2"
+              ],
+              "kind": "basis",
+              "ridge": 1e-06
+            }
+          },
+          "operator": "one_edit_mutation",
+          "parent": "775224584538884b1975673f7b4701511be534c9185d1ed2ade82437dc5bf5e8",
+          "program": {
+            "features": [
+              "x",
+              "x2"
+            ],
+            "kind": "basis",
+            "ridge": 1e-06
+          },
+          "selection_score": 7.6927051126091825,
+          "world_losses": {
+            "in_distribution": 0.09825895556711399,
+            "proxy_failure": 0.10477993079260316,
+            "shifted_inputs": 7.692685112609182
+          },
+          "worst_loss": 7.692685112609182
+        },
+        {
+          "complexity": 4,
+          "generation": 4,
+          "id": "296c4a13e569f6f64c7f82996510c492e09defaa83b1051224657ac2962ede38",
+          "mean_loss": 9.506926095587117,
+          "model": {
+            "coefficients": [
+              -0.002140163197349342,
+              1.006705739334309,
+              -0.012783230706131826,
+              -0.004056762351262316,
+              -0.00028421483984369294
+            ],
+            "program": {
+              "features": [
+                "proxy",
+                "sin",
+                "x",
+                "x2"
+              ],
+              "kind": "basis",
+              "ridge": 1e-06
+            }
+          },
+          "operator": "one_edit_mutation",
+          "parent": "775224584538884b1975673f7b4701511be534c9185d1ed2ade82437dc5bf5e8",
+          "program": {
+            "features": [
+              "proxy",
+              "sin",
+              "x",
+              "x2"
+            ],
+            "kind": "basis",
+            "ridge": 1e-06
+          },
+          "selection_score": 28.520747175543942,
+          "world_losses": {
+            "in_distribution": 2.9268277825217942e-05,
+            "proxy_failure": 28.520707175543944,
+            "shifted_inputs": 4.1842939582215976e-05
+          },
+          "worst_loss": 28.520707175543944
+        },
+        {
+          "complexity": 4,
+          "generation": 4,
+          "id": "bf8f75c28ef55d96325719340bf2962c5df0e894e2a1843bb4f31fc84ee4a8dc",
+          "mean_loss": 9.503469625403966,
+          "model": {
+            "coefficients": [
+              -0.002749883083881191,
+              0.000649925755950987,
+              1.0065245029793808,
+              -0.012429372317063807,
+              -0.00392575886508355
+            ],
+            "program": {
+              "features": [
+                "cos",
+                "proxy",
+                "sin",
+                "x"
+              ],
+              "kind": "basis",
+              "ridge": 1e-06
+            }
+          },
+          "operator": "one_edit_mutation",
+          "parent": "01692d289db85a3648de3b492bcfe5e896ec07c585efec051be0b7a42c2ae36e",
+          "program": {
+            "features": [
+              "cos",
+              "proxy",
+              "sin",
+              "x"
+            ],
+            "kind": "basis",
+            "ridge": 1e-06
+          },
+          "selection_score": 28.510378932067457,
+          "world_losses": {
+            "in_distribution": 2.9202611298988662e-05,
+            "proxy_failure": 28.51033893206746,
+            "shifted_inputs": 4.074153313843402e-05
+          },
+          "worst_loss": 28.51033893206746
+        },
+        {
+          "complexity": 2,
+          "generation": 4,
+          "id": "67ea3ef32e7919edb91ea17e633b9d4b83d7a656205b15e786d44d9612871eca",
+          "mean_loss": 0.7716678940329897,
+          "model": {
+            "coefficients": [
+              0.41286837252525804,
+              -0.0069870839320110845,
+              3.0573937524344648
+            ],
+            "program": {
+              "features": [
+                "cos",
+                "sin"
+              ],
+              "kind": "basis",
+              "ridge": 1e-06
+            }
+          },
+          "operator": "one_edit_mutation",
+          "parent": "01692d289db85a3648de3b492bcfe5e896ec07c585efec051be0b7a42c2ae36e",
+          "program": {
+            "features": [
+              "cos",
+              "sin"
+            ],
+            "kind": "basis",
+            "ridge": 1e-06
+          },
+          "selection_score": 2.2611757711389227,
+          "world_losses": {
+            "in_distribution": 0.02536128871752093,
+            "proxy_failure": 0.028486622242525808,
+            "shifted_inputs": 2.2611557711389225
+          },
+          "worst_loss": 2.2611557711389225
+        },
+        {
+          "complexity": 2,
+          "generation": 4,
+          "id": "01aa49021961a2c102867937c9380d60f20a5b5c87a2db8b88ba1f241ff3b636",
+          "mean_loss": 0.7672096976998134,
+          "model": {
+            "coefficients": [
+              0.4069932645507779,
+              3.0574627915584047,
+              0.0020580289894006625
+            ],
+            "program": {
+              "features": [
+                "sin",
+                "x2"
+              ],
+              "kind": "basis",
+              "ridge": 1e-06
+            }
+          },
+          "operator": "one_edit_mutation",
+          "parent": "775224584538884b1975673f7b4701511be534c9185d1ed2ade82437dc5bf5e8",
+          "program": {
+            "features": [
+              "sin",
+              "x2"
+            ],
+            "kind": "basis",
+            "ridge": 1e-06
+          },
+          "selection_score": 2.2477801894669196,
+          "world_losses": {
+            "in_distribution": 0.02538564425026611,
+            "proxy_failure": 0.02848325938225491,
+            "shifted_inputs": 2.2477601894669195
+          },
+          "worst_loss": 2.2477601894669195
+        },
+        {
+          "complexity": 2,
+          "generation": 4,
+          "id": "76c197ab4f376396e65178d77dc072160d230a52e95631aef55c6445cde79211",
+          "mean_loss": 2.5738302229990255,
+          "model": {
+            "coefficients": [
+              0.4094619267049455,
+              -0.033843197049474916,
+              1.9605965213291843
+            ],
+            "program": {
+              "features": [
+                "cos",
+                "x"
+              ],
+              "kind": "basis",
+              "ridge": 1e-06
+            }
+          },
+          "operator": "one_edit_mutation",
+          "parent": "01692d289db85a3648de3b492bcfe5e896ec07c585efec051be0b7a42c2ae36e",
+          "program": {
+            "features": [
+              "cos",
+              "x"
+            ],
+            "kind": "basis",
+            "ridge": 1e-06
+          },
+          "selection_score": 7.51845833244133,
+          "world_losses": {
+            "in_distribution": 0.09830576729741092,
+            "proxy_failure": 0.10474656925833552,
+            "shifted_inputs": 7.51843833244133
+          },
+          "worst_loss": 7.51843833244133
+        }
+      ],
+      "holdout_seen_by_search": false,
+      "incumbent_evaluation_mode": "FITTED_REFERENCE_PROGRAM",
+      "proposal_count": 56,
+      "search_status": "SEARCH_COMPLETE",
+      "strong_comparator": {
+        "coefficients": [
+          0.4299529491562678,
+          -0.03467982045886335,
+          1.7064331360743723,
+          0.9921448059317213,
+          -0.008189597036531857,
+          -0.04167519510700874
+        ],
+        "program": {
+          "features": [
+            "cos",
+            "sin",
+            "x",
+            "x2",
+            "x3"
+          ],
+          "kind": "basis",
+          "ridge": 0.001
+        }
+      },
+      "work_units": 224640
+    },
+    "seed": 17,
+    "source_fingerprint": "fdc11910ac039aacb3b3284bc075053e72be9bcce0487fa20474452eb5d8a8d0",
+    "status": "REVIEWABLE",
+    "task": "periodic"
+  },
+  "telemetry": {
+    "python": "3.13.5",
+    "wall_seconds": 0.1494773870000472,
+    "work_unit_kind": "deterministic_accounting_units_not_joules",
+    "work_units": 224640
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "checked": "2026-09-08",
+  "sources": [
+    {
+      "id": "F1",
+      "kind": "user-supplied commentary",
+      "title": "OpenAI首席科学家：我们已造出异星心智，全人类都要刹车了",
+      "date": "2026-09-07",
+      "file": "粘贴的 markdown (1)。md(5)",
+      "scope": "Source distinguishes goal/value alignment; sensational statements are not this release evidence."
+    },
+    {
+      "id": "P1",
+      "kind": "primary",
+      "title": "AlphaEvolve",
+      "url": "https://deepmind.google/blog/alphaevolve-a-gemini-powered-coding-agent-for-designing-advanced-algorithms/",
+      "scope": "Proposal/evaluator/evolution architecture; no reproduction or superiority claim."
+    },
+    {
+      "id": "P2",
+      "kind": "official documentation",
+      "title": "Python http.server",
+      "url": "https://docs.python.org/3/library/http.server.html",
+      "scope": "Not recommended for production; only basic security checks."
+    },
+    {
+      "id": "P3",
+      "kind": "official documentation",
+      "title": "SQLite Isolation",
+      "url": "https://www.sqlite.org/isolation.html",
+      "scope": "Transaction visibility and serialized writing."
+    },
+    {
+      "id": "P4",
+      "kind": "official framework",
+      "title": "NIST AI Risk Management Framework",
+      "url": "https://www.nist.gov/itl/ai-risk-management-framework",
+      "scope": "Risk-management framework, not a product certification."
+    },
+    {
+      "id": "R1",
+      "kind": "measured in this release",
+      "title": "ASCENT 0.2 validation",
+      "file": "validation/summary.json",
+      "scope": "Public synthetic experiments and local reference controls only."
+    }
+  ]
+}
