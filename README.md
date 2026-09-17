@@ -1,5 +1,13 @@
 # DIKWP ASCENT Research Kernel 0.2.0
 
+
+[**Start here · 使用导读**](GETTING_STARTED.md) · [Project details · 项目详情](https://github.com/YucongDuan/YucongDuan/blob/main/projects/1362110634.md)
+
+Study numerical experiments, stronger-reference comparisons, explicit adoption, inference, monitoring and rollback.
+
+研究数值实验、强参考比较、明确采用、推断、监测与回退。
+
+
 Created by Yucong Duan (段玉聪). Licensed under Apache-2.0.
 
 [中文与英文快速开始](docs/QUICKSTART_CN_EN.md) · [Complete original delivery](release/DIKWP_ASCENT_v0.2.0_FULL_DELIVERY.zip) · [Publication record](PUBLICATION.md)
